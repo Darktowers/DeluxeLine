@@ -2,27 +2,60 @@
 @import "style.styl"
 @import "nib"
 @import "nib/vendor"
+@import "owl.carousel"
 vendor-prefixes = o ms moz webkit official
-azul = #012839
+azul = #058CDA
 rojo = #ff4800
 verde = #149152
 amarillo = #ff4800
 negro = #2e2f33
-blanco= #fff;
+blanco= #fff
+blanco-tenue= #EDEFED
+
+body
+	background blanco-tenue
 
 .Cabecera
 	position relative
 	width 100%
-	background blanco
+	overflow hidden
+	border-bottom: 0.2em solid #058CDA;
+	z-index: 2;
 	&-logo
 		display inline-block
+		float left
+		margin: .5em .5em 0em .5em;
 		&Img
-			width 120px
-			height 40px
+			width 130px
+			
 	.Menumovil
 		display none
 	.Menumovil-icono
 		display inline-block
+		float right
+		width 28px
+		margin: .5em .5em 0em .5em;
+		.Menumovil-grid
+			width: 100%;
+			height: 6px;
+			display: block;
+			margin-bottom: 0.2em;
+			background-color: azul;
+.BuscarHabitacion
+	display none
+.Contenido-slider
+	position: relative
+	top -100px
+	.owl-carousel
+		.item
+			img
+				width 100%
+				height 400px
+			
+		
+		
+		
+		
 		
 		
 		
