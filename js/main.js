@@ -23,3 +23,6 @@ $('.Buscar-movilInput').on("focus",function(){
 $('.cerrar').on("click",function(){
   $('.BuscarHabitacion').hide("fade"); 
 });
+$('.Buscar-movil').on("focus",function(){
+  $('.BuscarHabitacion').show("fade"); 
+});
