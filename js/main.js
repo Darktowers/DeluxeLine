@@ -1,8 +1,25 @@
 $('.owl-carousel').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
     items:1,
-    margin:0,
-    autoHeight:false,
     loop:true,
-    autoPlay:true
+    autoplay:true,
+    autoplayTimeout:3000,
 
+});
+$('.owl-carousel-1').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'fadeIn',
+    items:1,
+    loop:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+
+});
+
+$('.Buscar-movilInput').on("focus",function(){
+  $('.BuscarHabitacion').show("fade"); 
+});
+$('.cerrar').on("click",function(){
+  $('.BuscarHabitacion').hide("fade"); 
 });

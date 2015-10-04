@@ -3,15 +3,22 @@
 @import "nib"
 @import "nib/vendor"
 @import "owl.carousel"
+@import "animate"
 vendor-prefixes = o ms moz webkit official
 azul = #058CDA
-rojo = #ff4800
+rojo = rgba(255, 47, 0, 0.95)
 verde = #149152
-amarillo = #ff4800
+amarillo = #FFBB00
 negro = #2e2f33
 blanco= #fff
 blanco-tenue= #EDEFED
-
+naranja = #FF3D00
+.wrap
+	overflow: hidden;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 4em;
+		
 body
 	background blanco-tenue
 
@@ -41,11 +48,10 @@ body
 			display: block;
 			margin-bottom: 0.2em;
 			background-color: azul;
-.BuscarHabitacion
-	display none
+
 .Contenido-slider
 	position: relative
-	top -100px
+	top -46px
 	.owl-carousel
 		.item
 			img
@@ -57,17 +63,20 @@ body
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
+	margin-top: 145px;
 	left: 0;
 	right: 0;
 	width: 60%;
 	color: azul;
+	top: 0;
+	text-align: center
 	h1
 		color blanco
 	.Buscar-movil
-		background-color: white;
+		background-color: #fff;
 		text-align: center;
 		overflow: hidden;
+		position: relative;
 		.Bhabitacion
 			color: #058CDA;
 			z-index: 1;
@@ -82,12 +91,159 @@ body
 		.Buscar
 			display: inline-block;
 			padding: 1em;
-			float: right;
-			background-color: #058CDA;
+			/* float: right; */
+			background-color: #058cda;
+			position: absolute;
+			right: 0;
+			top: 0;
 			.icon-search
 				color: white;
+		.Buscar-movilInput
+			position: relative;
+			padding: 0.90em;
+			/* right: 0; */
+			width: 100%;
+			text-align: center;
+			padding-right: 3em;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+.Hotel
+	text-align center
+	.Hotel-calidad
+		position: relative;
+		padding: 2em 1em;
+		text-align: center;
+		background: #058cda;
+		display: inline-block;
+		max-width: 35%;
+		min-height: 251px;
+		h2
+			font-size: 2em;
+			color: blanco;
+			margin: 0;
+			font-weight normal
+		p
+			color blanco
+		button
+			background-color: rojo
+			border: 0;
+			padding: 0.5em 2em;
+			color: white;
+			border: 1px solid #FF3D00;
+	.Hotel-calidadSlider
+		display: inline-block;
+		max-width: 61%;
+		float: right;
+		.owl-carousel-1
+			.item
+				img
+					width 100%
+					height 315px
+.hotelfooter
+	text-align: center;
+	background-color: #058CDA;
+	padding 1em
+	.Hotelfooter-Links
+		display inline-block
+		/* box-shadow: 1px 3px 15px #058CDA; */
+		color: blanco;
+		text-align: left;
+		border-left: 1px solid white;
+		padding-left: 1em;
+		.Hotelfooter-LinksItem
+			list-style: none;
+			margin-bottom: 0.5em;
+			a
+				text-decoration none
+				color blanco
+.HotelLove
+	background-color: white;
+	text-align: center;
+	font-weight: bold;
+	padding: 0.5em;
+	box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.85);
+.BuscarHabitacion
+	display: none;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.73);
+	text-align: center;
+	left: 0;
+	right: 0;
+	.cerrar
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		margin: .5em .5em 0 .5em;
+		.icon-cross
+			font-size: 1.5em;
+			color: #058CDA;
+	.BuscarHabitacion-boxForm
+		display: inline-block;
+		text-align: center;
+		margin-top: 25%;
+		.huespedes
+			position: relative;
+			padding: .9em;
+			width: 65%;
+			text-align: center;
+			padding-right: 3em;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		.llegada
+			position: relative;
+			padding: .9em;
+			width: 32%;
+			text-align: center;
+			/* padding-right: 3em; */
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-top: 0.5em;
+		.salida
+			position: relative;
+			padding: .9em;
+			width: 32%;
+			text-align: center;
+			/* padding-right: 3em; */
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		.BuscarHabitacion-botonBuscar
+			background-color: rgba(255,47,0,0.95);
+			border: 0;
+			padding: 0.5em 2em;
+			color: #fff;
+			border: 1px solid #ff3d00;
+			width: 65%;
+			margin-top: 0.5em;
+
+
+
+@media screen and (max-width:817px)
+	.Hotel-calidadSlider
+		max-width: 480px !important;
+		display: inline-block;
+		/* max-width: 400px; */
+		float: none !important;
+		/* margin: 0 auto; */
+	.Hotel-calidad
+		max-width: 100% !important;
+		min-height 0 !important
+@media screen and (max-width:480px)
+	.Hotel-calidadSlider
+		max-width: 100% !important;
+	
 		
-		
+
+
 		
 		
 		

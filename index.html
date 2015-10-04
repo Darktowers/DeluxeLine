@@ -38,7 +38,7 @@
 		<section class="HotelFrase">
 			<h1>Disfruta del hotel de tus sueños</h1>
 			<div class="Buscar-movil">
-				<input type="text" class="Buscar-movilInput">
+				<input type="text" class="Buscar-movilInput" placeholder="Buscar Habitaciones">
 				<div class="Buscar">
 					<span class="icon-search"></span>
 				</div>
@@ -47,10 +47,16 @@
 	</div>
 		
 	<section class="BuscarHabitacion">
+		<div class="Cabecera">
+			<div class="Cabecera-logo">
+			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
+		</div>
+		<div class="cerrar"><span class="icon-cross"></span></div>
+		</div>
 		<div class="BuscarHabitacion-box">
 			<form action="" class="BuscarHabitacion-boxForm">
 				<div class="BuscarHabitacion-contenedorForm">
-					<select name="NumeroHuespedes" id="">
+					<select name="NumeroHuespedes" id="" class="huespedes">
 						
 						<option value="" selected>1 huesped</option>
 						<option value="">2 huespedes</option>
@@ -59,8 +65,8 @@
 					</select>
 				</div>
 				<div class="BuscarHabitacion-contenedorFormFechas">
-					<input type="text" name="FechaLLegada"placeholder="LLegada">
-					<input type="text" name="FechaSalida" placeholder="Salida">
+					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada">
+					<input type="text" name="FechaSalida" placeholder="Salida" class="salida">
 				</div>
 				<button class="BuscarHabitacion-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
 			</form>
@@ -68,32 +74,39 @@
 	</section>
 
 	<div class="Hotel">
-		
-		<section class="Hotel-calidad">
-			<h2>Ofrecemos el mejor servicio al cliente</h2>
-			<p>Usa nuestra platoforma para disfrutar de un servicio personalizado</p>	
-			<button>Reservar ahora</button>
-		</section>
-		<section class="Hotel-map">
-			
-		</section>
+		<div class="wrap">
+			<section class="Hotel-calidad">
+				<h2>Ofrecemos el mejor servicio al cliente</h2>
+				<p>Usa nuestra platoforma para disfrutar de un servicio personalizado</p>	
+				<button>Reservar ahora</button>
+			</section>
+			<section class="Hotel-calidadSlider">
+				<div class="owl-carousel-1">
+				    <div class="item" style="width:488px"><img src="img/deluxeline-pool.jpg" alt=""></div>
+				    <div class="item" style="width:488px"><img src="img/deluxeline-pool2.jpg" alt=""></div>
+				    <div class="item" style="width:488px"><img src="img/deluxeline-playa.jpg" alt=""></div>
+				</div>
+			</section>
+		</div>
 
 	</div>
 	<footer class="hotelfooter">
-		<nav class="Hotelfooter-Links">
+		<nav class="Hotelfooter-Links" style="    margin-right: 2em;">
 			<li class="Hotelfooter-LinksItem"><a href="">Home</a></li>
 			<li class="Hotelfooter-LinksItem"><a href="">Beneficios</a></li>
 			<li class="Hotelfooter-LinksItem"><a href="">Calidad</a></li>
 			<li class="Hotelfooter-LinksItem"><a href="">Ubicacion</a></li>
 		</nav>
-		<nav class="Hotelfooter-Links">
+		<nav class="Hotelfooter-Links" style="    position: relative;
+    top: -27px;">
 			<li class="Hotelfooter-LinksItem"><a href="">Contactenos</a></li>
 			<li class="Hotelfooter-LinksItem"><a href="">Sobre DeluxeLine</a></li>
 			<li class="Hotelfooter-LinksItem"><a href="">Site Map</a></li>
 			<li class="Hotelfooter-LinksItem"><a href=""></a></li>
 		</nav>
-		<div class="HotelLove">Made with love</div>
+		
 	</footer>
+	<div class="HotelLove">Code with <span class="icon-heart"></span></div>
 
 	
 
