@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>DeluxeLine Hotel</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.css">
+">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300,700italic,700' rel='stylesheet' type='text/css'>
 
@@ -54,7 +56,7 @@
 		<div class="cerrar"><span class="icon-cross"></span></div>
 		</div>
 		<div class="BuscarHabitacion-box">
-			<form action="" class="BuscarHabitacion-boxForm">
+			<form action="" method="POST" class="BuscarHabitacion-boxForm">
 				<div class="BuscarHabitacion-contenedorForm">
 					<select name="NumeroHuespedes" id="" class="huespedes">
 						
@@ -65,10 +67,10 @@
 					</select>
 				</div>
 				<div class="BuscarHabitacion-contenedorFormFechas">
-					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada">
-					<input type="text" name="FechaSalida" placeholder="Salida" class="salida">
+					<input type="text" name="FechaLLegada" id="FechaLLegada" placeholder="LLegada" class="llegada date" required>
+					<input type="text" name="FechaSalida" id="FechaSalida" placeholder="Salida" class="salida date" required>
 				</div>
-				<button class="BuscarHabitacion-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
+				<button type="submit" class="BuscarHabitacion-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
 			</form>
 		</div>
 	</section>
@@ -112,6 +114,8 @@
 
 </body>
 <script src="js/lib/jquery.js"></script>
+<script src="js/lib/jquery-ui/jquery-ui.js"></script>
+<script src="js/calendario.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
 </html>
