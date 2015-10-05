@@ -13,5 +13,5 @@ if($mysql->connect_errno){
 else{
 	echo "come pija puto fracasadito!!!";
 }
-exit;
+
 ?>

@@ -427,7 +427,7 @@ ADD CONSTRAINT `habitacion_ibfk_2` FOREIGN KEY (`fkIdTipoEstado`) REFERENCES `ti
 -- Filtros para la tabla `habitacionservicio`
 --
 ALTER TABLE `habitacionservicio`
-ADD CONSTRAINT `habitacionservicio_ibfk_1` FOREIGN KEY (`fkIdHabitacion`) REFERENCES `habitacion` (`idHabitacion`),
+ADD CONSTRAINT `habitacionservicio_ibfk_1` FOREIGN KEY (`fkIdHabitacion`) REFERENCES `tipoHabitacion` (`idTipoHabitacion`),
 ADD CONSTRAINT `habitacionservicio_ibfk_2` FOREIGN KEY (`fkIdEstadoHS`) REFERENCES `estadohs` (`idEestadoHS`),
 ADD CONSTRAINT `habitacionservicio_ibfk_3` FOREIGN KEY (`fkIdServicio`) REFERENCES `servicio` (`idServicio`);
 

@@ -1,1 +1,6 @@
-Business Room;2;483529;20Standard Room;2;493965;20Comfort Room;2;528751;26Supeior Room;3;775734;36Junior Suite;3;967058;50Suite;3;1106204;60
+Business Room;483529;2;20
+Standard Room;483529;2;20
+Comfort Room;528751;2;26
+Supeior Room;775734;3;36
+Junior Suite;967058;3;50
+Suite;1106204;3;60

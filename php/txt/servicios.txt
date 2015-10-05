@@ -1,0 +1,21 @@
+Aire Acondicionado;1
+Internet;1
+Cama Doble;1
+Baño + Tina;1
+Televisor LCD + Cable;2
+Todo para preparar cafe;1
+Sala;2
+Mesa para Portatil;2
+2 Camas Dobles;3
+Baño Grande + Tina;2
+Parqueadero;3
+Reproductor de DVD;3
+2 Baños + Tina;3
+Parqueadero;3
+Frutas Frescas;3
+Telefono;1
+Bebidas;4
+Alimentos;4
+Bar;3
+Mini Bar;2
+Plus;4
