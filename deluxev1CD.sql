@@ -368,10 +368,10 @@ CREATE TABLE IF NOT EXISTS `tipohabitacion` (
 --
 
 INSERT INTO `tipohabitacion` (`idTipoHabitacion`, `descripcion`, `precio`, `cantHuespedes`, `tamaño`) VALUES
-(1, 'Business Room', 483529, 2, 20),
-(2, 'Standard Room', 483529, 2, 20),
+(1, 'Business Room', 483529, 1, 20),
+(2, 'Standard Room', 483529, 1, 20),
 (3, 'Comfort Room', 528751, 2, 26),
-(4, 'Supeior Room', 775734, 3, 36),
+(4, 'Supeior Room', 775734, 2, 36),
 (5, 'Junior Suite', 967058, 3, 50),
 (6, 'Suite', 1106204, 3, 60);
 

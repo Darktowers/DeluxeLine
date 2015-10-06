@@ -11,5 +11,4 @@ if($mysql->connect_errno){
 	echo "La conexion a la base de datos a fallado"."</br>".$mysql->connect_errno."</br>".$mysql->connect_error;
 }
 
-
 ?>

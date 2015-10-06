@@ -1,17 +1,4 @@
-<?php 
 
-if($_POST){
-
-$NumeroHuespedes=$_POST['NumeroHuespedes'];
-$FechaLLegada=$_POST['FechaLLegada'];
-$FechaSalida=$_POST['FechaSalida'];
-
-
-echo $NumeroHuespedes." ".$FechaLLegada." ".$FechaSalida;
-
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,32 +55,48 @@ echo $NumeroHuespedes." ".$FechaLLegada." ".$FechaSalida;
 			</form>
 		</div>
 	</section>
-		<section class="Habitaciones hbb">
+	<section class="Habitaciones">
+	<?php 
+
+		if($_POST){
+
+		include_once "php/includes/consulHabi.php";
+
+		$NumeroHuespedes=$_POST['NumeroHuespedes'];
+		$FechaLLegada=$_POST['FechaLLegada'];
+		$FechaSalida=$_POST['FechaSalida'];
+
+
+		new consulHabi ($NumeroHuespedes,$FechaLLegada,$FechaSalida);
+
+		}
+
+	?>
+		<!--
 			<article class="Habitacion">
 				<img src="img/habitaciones/suite.jpg" alt="" class="Habitacion-img">
 				<div class="tipoHabitacion"><h3>Suit</h3></div>
 				<div class="precio">$800,000</div>
 				<div class="descuento">20%</div>
-			
 			</article>
-				<div class="Servicios-pri">
-					<div class="Servicio">
-						<span class="Servicio-icono"><img src="img/icon/multy-user.png" alt=""></span>
-						<span class="Number">5</span>
-						<p class="Text">Huespedes</p>
-					</div>
-					<div class="Servicio">
-						<span class="Servicio-icono"><img src="img/icon/multy-user.png" alt=""></span>
-						<span class="Number">1</span>
-						<p class="Text">Cama</p>
-					</div>
-					<div class="Servicio">
-						<span class="Servicio-icono"><img src="img/icon/multy-user.png" alt=""></span>
-						<span class="Number">5</span>
-						<p class="Text">Huespedes</p>
-					</div>
-				</div>
-		
+				<article class="Habitacion">
+				<img src="img/habitaciones/superior_room.jpg" alt="" class="Habitacion-img">
+				<div class="tipoHabitacion"><h3>Superior Room</h3></div>
+				<div class="precio">$1´000,000</div>
+				
+			</article>
+				<article class="Habitacion">
+				<img src="img/habitaciones/junior_suite.jpg" alt="" class="Habitacion-img">
+				<div class="tipoHabitacion"><h3>Junior Suit</h3></div>
+				<div class="precio">$900.000</div>
+				<div class="descuento">15%</div>
+			</article>
+				<article class="Habitacion">
+				<img src="img/habitaciones/comfort-room.jpg" alt="" class="Habitacion-img">
+				<div class="tipoHabitacion"><h3>Comfort Room</h3></div>
+				<div class="precio">$1'200.000</div>
+				<div class="descuento">30%</div>
+			</article>-->
 		</section>
 
 
