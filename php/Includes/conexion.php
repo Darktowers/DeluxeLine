@@ -1,9 +1,9 @@
 <?php
 
-$usuario="root";
-$host="localhost";
-$pass="";
-$db="deluxev1";
+$usuario="b0818c18938003";
+$host="us-cdbr-azure-west-c.cloudapp.net";
+$pass="9c0f15ab";
+$db="deluxe";
 
 $mysql=new mysqli($host,$usuario,$pass,$db);
 
