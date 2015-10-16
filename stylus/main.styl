@@ -21,7 +21,11 @@ naranja = #FF3D00
 		
 body
 	background blanco-tenue
-
+.escritorio
+	display none !important
+.movil
+	display none !important
+	
 .Cabecera
 	position relative
 	width 100%
@@ -230,6 +234,8 @@ body
 /*Busqueda*/
 .cab
 	text-align center
+	background-color: rgba(0,0,0,0.73);
+	
 	.Buscar-movil
 		position: relative;
 		padding: 0.5em 0.5em;
@@ -310,6 +316,8 @@ body
 	display none
 				
 @media screen and (min-width:817px)
+	.escritorio
+		display block !important
 	.MenuEscritorio
 		display inline-block
 		position absolute
