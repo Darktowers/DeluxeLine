@@ -224,6 +224,8 @@ body
 			border: 1px solid #ff3d00;
 			width: 65%;
 			margin-top: 0.5em;
+			
+
 
 /*Busqueda*/
 .cab
@@ -301,9 +303,59 @@ body
 			display block
 		
 				
-
+/* Buscar escritorio*/
+.BuscarEscritorio
+	display none
 				
-
+@media screen and (min-width:817px)
+	.Buscar-movil
+		display none
+	.BuscarEscritorio
+		position relative
+		display block	
+		.BuscarEscritorio-form
+			text-align: center;
+			.huespedes
+				position: relative;
+				padding: .9em;
+				width: 65%;
+				text-align: center;
+				padding-right: 3em;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			.llegada
+				position: relative;
+				padding: .9em;
+				width: 32%;
+				text-align: center;
+				/* padding-right: 3em; */
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				margin-top: 0.5em;
+			.salida
+				position: relative;
+				padding: .9em;
+				width: 32%;
+				text-align: center;
+				/* padding-right: 3em; */
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+			.BuscarEscritorio-botonBuscar
+				background-color: rgba(255,47,0,0.95);
+				border: 0;
+				padding: 0.5em 2em;
+				color: #fff;
+				border: 1px solid #ff3d00;
+				width: 65%;
+				margin-top: 0.5em;
+		
+				
 @media screen and (max-width:817px)
 	.Hotel-calidadSlider
 		max-width: 480px !important;
@@ -314,6 +366,8 @@ body
 	.Hotel-calidad
 		max-width: 100% !important;
 		min-height 0 !important
+		
+		
 @media screen and (max-width:480px)
 	.Hotel-calidadSlider
 		max-width: 100% !important;

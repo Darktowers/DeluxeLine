@@ -44,6 +44,24 @@
 					<span class="icon-search"></span>
 				</div>
 			</div>
+			<div class="BuscarEscritorio">
+			<form action="buscar.php" method="post" class="BuscarEscritorio-form">
+				<div class="BuscarEscritorio-contenedorForm">
+					<select name="NumeroHuespedes" id="" class="huespedes">
+						
+						<option value="1" selected>1 huesped</option>
+						<option value="2">2 huespedes</option>
+						<option value="3">3 huespedes</option>
+						<option value="4">4 huespedes</option>
+					</select>
+				</div>
+				<div class="BuscarEscritorio-contenedorFormFechas">
+					<input type="text" name="FechaLLegada" id="FechaLLegada" placeholder="LLegada" class="llegada date" required>
+					<input type="text" name="FechaSalida" id="FechaSalida" placeholder="Salida" class="salida date" required>
+				</div>
+				<button type="submit" class="BuscarEscritorio-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
+			</form>
+		</div>
 		</section>
 	</div>
 		
