@@ -14,7 +14,14 @@
 		<div class="Cabecera-logo">
 			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
-		
+		<div class="MenuEscritorio">
+			<nav class="MenuEscritorio-nav">
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Home</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Beneficios</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Calidad</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ubicacion</a></li>
+			</nav>
+		</div>
 		<div class="Menumovil">
 			<nav class="Menumovil-ul">
 				<li class="Menumovil-item"><a href="" class="Menumovil-link">Home</a></li>
@@ -47,6 +54,10 @@
 			<div class="BuscarEscritorio">
 			<form action="buscar.php" method="post" class="BuscarEscritorio-form">
 				<div class="BuscarEscritorio-contenedorForm">
+					
+		
+					<input type="text" name="FechaLLegada" id="FechaLLegada" placeholder="LLegada" class="llegada date" required>
+					<input type="text" name="FechaSalida" id="FechaSalida" placeholder="Salida" class="salida date" required>
 					<select name="NumeroHuespedes" id="" class="huespedes">
 						
 						<option value="1" selected>1 huesped</option>
@@ -54,12 +65,9 @@
 						<option value="3">3 huespedes</option>
 						<option value="4">4 huespedes</option>
 					</select>
+					<button type="submit" class="BuscarEscritorio-botonBuscar">Buscar Habitaciones</button>
 				</div>
-				<div class="BuscarEscritorio-contenedorFormFechas">
-					<input type="text" name="FechaLLegada" id="FechaLLegada" placeholder="LLegada" class="llegada date" required>
-					<input type="text" name="FechaSalida" id="FechaSalida" placeholder="Salida" class="salida date" required>
-				</div>
-				<button type="submit" class="BuscarEscritorio-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
+				
 			</form>
 		</div>
 		</section>
