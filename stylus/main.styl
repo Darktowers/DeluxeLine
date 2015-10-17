@@ -254,9 +254,6 @@ body
 		border-bottom: 3px solid #058CDA;
 		background: #fff;
 		position relative
-		&:hover
-			z-index: 2;
-			box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 		.Habitacion-img
 			width 100%
 		.tipoHabitacion
@@ -316,8 +313,25 @@ body
 	display none
 				
 @media screen and (min-width:817px)
+
 	.escritorio
 		display block !important
+		
+	.Habitaciones
+		position: relative;
+		text-align: center;
+		.Habitacion
+			max-width: 500px;
+			display: inline-block;
+			margin-right: 0.5em;
+			margin-bottom: 0.5em;
+			&:hover
+				z-index: 2;
+				box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+			.Habitacion-img
+				width 100%
+				min-height: 400px;
+	
 	.MenuEscritorio
 		display inline-block
 		position absolute
