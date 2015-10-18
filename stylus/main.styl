@@ -21,6 +21,7 @@ naranja = #FF3D00
 		
 body
 	background blanco-tenue
+	color #333
 .escritorio
 	display none !important
 .movil
@@ -57,17 +58,16 @@ body
 	bottom: 40px;
 	left: 0;
 	right: 0;
-	z-index: 100;
 	width: 100%;
 			
-.BuscarHabitacion-botonBuscar
-	background-color: rgba(255,47,0,0.95);
-	border: 0;
-	padding: 0.5em 2em;
-	color: #fff;
-	border: 1px solid #ff3d00;
-	width: 65%;
-	margin-top: 0.5em;
+	.BuscarHabitacion-botonBuscar
+		background-color: rgba(255,47,0,0.95);
+		border: 0;
+		padding: 0.5em 2em;
+		color: #fff;
+		border: 1px solid #ff3d00;
+		width: 65%;
+		margin-top:4.5em;
 
 .Contenido-slider
 	position: relative
@@ -76,14 +76,14 @@ body
 		.item
 			img
 				width 100%
-				height 400px
+				height 740px
 .HotelFrase
 	bottom: 1em;
 	z-index: 1;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 145px;
+	margin-top: 370px;
 	left: 0;
 	right: 0;
 	width: 60%;
@@ -159,6 +159,7 @@ body
 				img
 					width 100%
 					height 315px
+					
 .hotelfooter
 	text-align: center;
 	background-color: #058CDA;
@@ -311,6 +312,7 @@ body
 	border-bottom: 3px solid #058CDA;
 	.Servicio
 		display: inline-block;
+		min-width 82px
 		.Servicio-icono
 			display: inline-block;
 			img
@@ -321,27 +323,142 @@ body
 		.Number
 			display block
 .Descripcion
-	text-align center
+	text-align: center;
+	max-width: 880px;
+	margin: 0 auto;
 	h1
 		font-size: 1.2em;
 		text-align: center;
 	p
 		padding: 1em;
 		max-width: 500px;
-		text-align: center;
+		text-align: left;
 		margin: 0;
 		display: inline-block;
+.Serviciosadd
+	text-align: center;
+	max-width: 880px;
+	margin: 0 auto;
+	h2
+		font-size: 1em;
+		text-align: center;
+	.Servicio
+		display: inline-block;
+		min-width 82px
+		.Servicio-icono
+			display: inline-block;
+			img
+				max-width: 40px;
+		.Text
+			font-size 1.2em
+			margin 0
+		.Number
+			display block
+
 /* Buscar escritorio*/
 .BuscarEscritorio
 	display none
 .MenuEscritorio
 	display none
+.Habitaciones
+	.HabitacionEscritorio
+		max-width: 880px;
+		display: inline-block;
+		/* margin-right: .5em; */
+		/* margin-bottom: .5em; */
+		width: 100%;
+		height: 500px;
+		position relative
+		.precio
+			position: absolute;
+			bottom: 80px;
+			padding: 0.5em 1em;
+			color: white;
+			background-color: #058CDA;
+		.Habitacion-img
+			width: 100%;
+			/* background-repeat: no-repeat; */
+			/* height: 400px; */
+			position: absolute;
+			left: 0;
+			max-height: 600px;
+			top: 0;
+			height: 443px;
+		.tipoHabitacion
+			padding: 1em;
+			text-align: left;
+			font-weight: 100;
+			/* top: 5px; */
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			box-sizing: border-box;
+			background: white;
+			h3
+				margin 0
+		
+				
+			.descuento
+				border-radius: 50%;
+				width: 50px;
+				text-align: center;
+				height: 50px;
+				line-height: 3;
+				position: absolute;
+				bottom: 6px;
+				right: 0;
+				margin-right: 1em;
+				background-color: rgb(5, 140, 218);
+				color: white;
+			p
+				margin 0
+/*reservas*/
+.table
+	margin-top: 1em;
+	max-width: 302px;
+	display: inline-block;
+	table
+		border-left: 0;
+		border-right: 0;
+		/* border: 1px solid #dce0e0; */
+		border-radius: 2px;
+		width: 100%;
+		border-collapse: separate;
+		margin-bottom: 15px;
+		background white
+		border-top: 3px solid #058CDA;
+		
+		td
+			padding: 1em;
+		td:nth-child(1) 
+			border-right: 1px solid #dce0e0;
+			border-bottom: 1px solid #dce0e0;
+			border-top: 1px solid #dce0e0;
+		td:nth-child(2) 
+			border-bottom: 1px solid #dce0e0;
+			border-top: 1px solid #dce0e0;
+		td:nth-child(3)
+			border-right: 1px solid #dce0e0;
+			border-bottom: 1px solid #dce0e0;
+		td:nth-child(4)
+			border-bottom: 1px solid #dce0e0;
+			 
+
 				
 @media screen and (min-width:766px)
 
 	.escritorio
 		display block !important
-		
+	
+	.Reservar
+		position: relative;
+		bottom: 40px;
+		left: 0;
+		right: 0;
+		width: 100%;
+	.Servicios-pri
+		position relative
+		z-index 1
 	.Habitaciones
 		position: relative;
 		text-align: center;
@@ -433,15 +550,4 @@ body
 @media screen and (max-width:480px)
 	.Hotel-calidadSlider
 		max-width: 100% !important;
-	
-		
-
-
-		
-		
-		
-		
-		
-		
-		
 	

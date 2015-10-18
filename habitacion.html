@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Buscar Habitaciones</title>
+	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.css">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300,700italic,700' rel='stylesheet' type='text/css'>
@@ -58,20 +59,63 @@
 					</select>
 				</div>
 				<div class="BuscarHabitacion-contenedorFormFechas">
-					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada">
-					<input type="text" name="FechaSalida" placeholder="Salida" class="salida">
+					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada date">
+					<input type="text" name="FechaSalida" placeholder="Salida" class="salida date">
 				</div>
 				<button class="BuscarHabitacion-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
 			</form>
 		</div>
+	
+	</section>
+	<section class="BuscarHabitacion reservas">
+		<div class="Cabecera">
+			<div class="Cabecera-logo">
+			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
+		</div>
+		<div class="cerrar"><span class="icon-cross"></span></div>
+		</div>
+		<div class="BuscarHabitacion-box">
+			<form action="php/reservar.php" class="BuscarHabitacion-boxForm">
+				<div class="BuscarHabitacion-contenedorForm">
+					<select name="NumeroHuespedes" id="" class="huespedes">
+						
+						<option value="" selected>1 huesped</option>
+						<option value="">2 huespedes</option>
+						<option value="">3 huespedes</option>
+						<option value="">4 huespedes</option>
+					</select>
+				</div>
+				<div class="BuscarHabitacion-contenedorFormFechas">
+					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada date">
+					<input type="text" name="FechaSalida" placeholder="Salida" class="salida date">
+				</div>
+				<div class="table">
+					<table>
+						<tr>
+							<td>
+        						$800,000 x 1 noche
+      						</td>
+							<td>$800,000</td>
+						</tr>
+						<tr>
+							<td>Total</td>
+							<td>$800,000</td>
+						</tr>
+						
+					</table>
+				</div>
+				<button class="BuscarHabitacion-botonBuscar ">Reservar</button>
+			</form>
+		</div>
+	
 	</section>
 		<section class="Habitaciones hbb">
-			<article class="Habitacion">
+			<article class="HabitacionEscritorio">
 				<img src="img/habitaciones/suite.jpg" alt="" class="Habitacion-img">
-				<div class="tipoHabitacion"><h3>Suit</h3></div>
-				<div class="precio">$800,000</div>
+				<div class="tipoHabitacion"><h3>Suit</h3>
 				<div class="descuento">20%</div>
-			
+			</div>
+			<div class="precio">$800,000</div>
 			</article>
 				<div class="Servicios-pri">
 					<div class="Servicio">
@@ -80,25 +124,47 @@
 						<p class="Text">Huespedes</p>
 					</div>
 					<div class="Servicio">
-						<span class="Servicio-icono"><img src="img/icon/multy-user.png" alt=""></span>
+						<span class="Servicio-icono"><img src="img/icon/bed40.png" alt=""></span>
 						<span class="Number">1</span>
 						<p class="Text">Cama</p>
 					</div>
 					<div class="Servicio">
-						<span class="Servicio-icono"><img src="img/icon/multy-user.png" alt=""></span>
-						<span class="Number">5</span>
-						<p class="Text">Huespedes</p>
+						<span class="Servicio-icono"><img src="img/icon/bathtub3.png" alt=""></span>
+						<span class="Number">1</span>
+						<p class="Text">Baño</p>
 					</div>
 				</div>
-		
+			<article class="Descripcion">
+				<h1>Descripcion Habitacion</h1>
+				<p>Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.</p>
+				
+
+			</article>
+			<article class="Serviciosadd">
+				<h2>Servicios adicionales</h2>
+				<div class="Servicio">
+						<span class="Servicio-icono"><img src="img/icon/telephone20.png" alt=""></span>
+						<p class="Text">Telefono</p>
+				</div>
+				<div class="Servicio">
+						<span class="Servicio-icono"><img src="img/icon/minibar.png" alt=""></span>
+						<p class="Text">Mini bar</p>
+				</div>
+				<div class="Servicio">
+						<span class="Servicio-icono"><img src="img/icon/cool6.png" alt=""></span>
+						<p class="Text">Ventilador</p>
+				</div>
+				<div class="Servicio">
+						<span class="Servicio-icono"><img src="img/icon/wifi74.png" alt=""></span>
+						<p class="Text">Internet</p>
+				</div>
+				
+				<div class="Reservar">
+					<button class="BuscarHabitacion-botonBuscar reservarH">Reservar ahora</button>
+				</div>
+			</article>
 		</section>
-		<article class="Descripcion">
-			<h1>Descripcion Habitacion</h1>
-			<p>Esta habitacion cuenta con vista al mar ademas de unos increibles muebles ajustados y decoracion increibles</p>
-			<div class="Reservar">
-				<button class="BuscarHabitacion-botonBuscar">Reservar ahora</button>
-			</div>
-		</article>
+	
 		
 		
 
@@ -106,5 +172,7 @@
 </body>
 <script src="js/lib/jquery.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/lib/jquery-ui/jquery-ui.js"></script>
+<script src="js/calendario.js"></script>
 <script src="js/main.js"></script>
 </html>
