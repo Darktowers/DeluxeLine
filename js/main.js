@@ -18,15 +18,17 @@ $('.owl-carousel-1').owlCarousel({
 });
 /*Buscar habitacion*/
 $('.Buscar-movilInput').on("focus",function(){
-  $('.BuscarHabitacion').show("fade"); 
+  $('.buscar').show("fade"); 
 });
 $('.cerrar').on("click",function(){
-  $('.BuscarHabitacion').hide("fade"); 
+  $('.buscar').hide("fade"); 
+  $('.reservas').hide("fade"); 
 });
 $('.Buscar-movil').on("focus",function(){
-  $('.BuscarHabitacion').show("fade"); 
+  $('.buscar').show("fade"); 
 });
 /*Reservar*/
+
 $('.reservarH').on("click",function(){
   $('.reservas').show("fade"); 
 });
