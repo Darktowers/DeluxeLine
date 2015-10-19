@@ -1,5 +1,7 @@
 $(function() {
 		
-		$('.date').datepicker();
+		
+	$('.date').datepicker();
+	$('.lol').datepicker();
 
 });
