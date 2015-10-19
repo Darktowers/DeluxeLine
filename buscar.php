@@ -77,8 +77,19 @@
 		$FechaLLegada=$_POST['FechaLLegada'];
 		$FechaSalida=$_POST['FechaSalida'];
 
+		echo"<form id='consulta' action='habitacion.php' method='post'>
+				<input type='hidden' name='NumeroHuespedes' id='NumeroHuespedes' value='".$NumeroHuespedes."'>
+				<input type='hidden' name='FechaLLegada' id='FechaLLegada' value='".$FechaLLegada."'>
+				<input type='hidden' name='FechaSalida' id='FechaSalida' value='".$FechaSalida."'>
+				<input type='hidden' name='habitacion' id='habitacion' value=''>
+				<input type='hidden' name='idHabitacion' id='idHabitacion' value=''>
+				<input type='hidden' name='precio' id='precio' value=''>
+			</form>";
 
-		new consulHabi ($NumeroHuespedes,$FechaLLegada,$FechaSalida);
+
+		$clase=new consulHabi();
+
+		$clase->habitacionesPorNumeroDeHuespedes($NumeroHuespedes);
 
 		}
 
@@ -117,4 +128,5 @@
 <script src="js/lib/jquery.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/habitacionSelect.js"></script>
 </html>
