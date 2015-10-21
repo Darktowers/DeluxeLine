@@ -16,15 +16,15 @@
 		</div>
 		<div class="MenuEscritorio">
 			<nav class="MenuEscritorio-nav">
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Home</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Beneficios</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Calidad</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ubicacion</a></li>
+				<li class="MenuEscritorio-item Iactive"><a href="" class="MenuEscritorio-link">Home</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Servicios</a></li>
+				<li class="MenuEscritorio-item inis">Iniciar Sesion</li>
+				<li class="MenuEscritorio-item regs">Registrarse</li>
 			</nav>
 		</div>
 		<div class="Menumovil">
 			<nav class="Menumovil-ul">
-				<li class="Menumovil-item"><a href="" class="Menumovil-link">Home</a></li>
+				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Home</a></li>
 				<li class="Menumovil-item"><a href="" class="Menumovil-link">Beneficios</a></li>
 				<li class="Menumovil-item"><a href="" class="Menumovil-link">Calidad</a></li>
 				<li class="Menumovil-item"><a href="" class="Menumovil-link">Ubicacion</a></li>
@@ -135,6 +135,41 @@
 	</footer>
 	<div class="HotelLove">Code with <span class="icon-heart"></span></div>
 
+
+
+	<div class="Registra">
+
+				<p>Registrate</p>
+				<div class="Registrarse-formulario">
+					<form action="registrar.php">
+						<input type="text" name="nombre" placeholder="Nombre">
+						<input type="text" name="cedula" placeholder="Cedula">
+						<input type="email" name="email" placeholder="Correo Electronico">
+						<input type="password" name="pass" placeholder="Contraseña">
+						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
+    padding: 1em;border:0;color:white;">Registrarse</button>
+    					<p style="color:white;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
+					</form>
+				</div>
+				
+			</form>
+			
+		</div>
+	<div class="Iniciar">
+		<p>Inicia Sesion</p>
+		<form action="php/iniciarsesion.php" class="IniciarForm">
+				
+				<div class="Registrarse-formulario">
+					<form action="registrar.php">
+						<input type="email" name="email" placeholder="Correo Electronico">
+						<input type="password" name="pass" placeholder="Contraseña">
+						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
+    padding: 1em;border:0; color:white;">Iniciar Sesion</button>
+					</form>
+				</div>
+				
+			</form>	
+		</div>	
 	
 
 </body>

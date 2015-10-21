@@ -57,3 +57,15 @@ $('.reg').on("click",function(){
   $('.RegistrarseForm').css("display","inline-block"); 
   
 });
+
+/*   */
+$(".Registra").hide();
+$(".Iniciar").hide();
+$('.inis').on("click",function(){
+  $('.Iniciar').show("fade"); 
+});
+$('.regs').on("click",function(){
+  $('.Registra').show("fade"); 
+  
+});
+
