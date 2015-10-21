@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,6 +93,9 @@
 
 		$clase->habitacionesPorNumeroDeHuespedes($NumeroHuespedes);
 
+		}
+		elseif(!$_POST){
+			header('location:index.php');
 		}
 
 	?>

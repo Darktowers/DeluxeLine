@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,6 +106,10 @@ if($_POST){
 				<div class="BuscarHabitacion-contenedorFormFechas">
 					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada date" value="<?php echo $FechaLLegada ?>">
 					<input type="text" name="FechaSalida" placeholder="Salida" class="salida date" value="<?php echo $FechaSalida ?>">
+					<input type='hidden' name='FechaLLegada' id='fechaLlegada' value='<?php echo $FechaLLegada ?>'>
+					<input type='hidden' name='FechaSalida' id='fechaSalida' value='<?php echo $FechaSalida ?>'>
+					<input type='hidden' name='idHabitacion' id='tipoHabitacion' value='<?php echo $idHabitacion ?>'>
+				
 				</div>
 				<div class="table">
 					<table>
@@ -120,7 +126,7 @@ if($_POST){
 						
 					</table>
 				</div>
-				<div class="BuscarHabitacion-botonBuscar reservarahora " style="display: inline-block;width: 50%;">Reservar</div>
+				<div class="BuscarHabitacion-botonBuscar reservarahora " id="reservar" style="display: inline-block;width: 50%;">Reservar</div>
 			</form>
 		</div>
 		<div class="Registrarse">
@@ -137,27 +143,27 @@ if($_POST){
 			<form action="php/registrarse.php" class="RegistrarseForm">
 				
 				<div class="Registrarse-formulario">
-					<form action="registrar.php">
-						<input type="text" name="nombre" placeholder="Nombre">
-						<input type="text" name="cedula" placeholder="Cedula">
-						<input type="email" name="email" placeholder="Correo Electronico">
-						<input type="password" name="pass" placeholder="Contraseña">
-						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
-    padding: 1em;border:0;color:white;">Registrarse</button>
+					<!-- <form > -->
+						<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+						<input type="number" name="cedula" id="cedula" placeholder="Cedula">
+						<input type="email" name="email" id="email" placeholder="Correo Electronico">
+						<input type="password" name="pass" id="pass" placeholder="Contraseña">
+						<label class="BuscarHabitacion-botonBuscar" id="registrar"  style="width: 100%;
+    padding: 1em;border:0;color:white;">Registrarse</label>
     					<p style="color:white;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
-					</form>
+					<!-- </form> -->
 				</div>
 				
 			</form>
-			<form action="php/iniciarsesion.php" class="IniciarForm">
+			<form action=" " class="IniciarForm">
 				
 				<div class="Registrarse-formulario">
-					<form action="registrar.php">
-						<input type="email" name="email" placeholder="Correo Electronico">
-						<input type="password" name="pass" placeholder="Contraseña">
-						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
-    padding: 1em;border:0; color:white;">Iniciar Sesion</button>
-					</form>
+					<!-- <form action="registrar.php"> -->
+						<input type="email" name="email" id="emailInicio" placeholder="Correo Electronico">
+						<input type="password" name="pass" id="passInicio" placeholder="Contraseña">
+						<label class="BuscarHabitacion-botonBuscar" id="inicio" style="width: 100%;
+    padding: 1em;border:0; color:white;" id="inicioSesion">Iniciar Sesion</label>
+					<!-- </form> -->
 				</div>
 				
 			</form>
@@ -222,6 +228,9 @@ if($_POST){
 	
 <?php
 }
+elseif(!$_POST){
+	header('location:index.php');
+}
 ?>		
 		
 
@@ -232,4 +241,5 @@ if($_POST){
 <script src="js/lib/jquery-ui/jquery-ui.js"></script>
 <script src="js/calendario.js"></script>
 <script src="js/main.js"></script>
+<script src="js/ajaxs.js"></script>
 </html>
