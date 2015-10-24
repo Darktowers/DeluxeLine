@@ -21,14 +21,17 @@ $('.Buscar-movilInput').on("focus",function(){
   $('.buscar').show("fade"); 
 });
 $('.cerrar').on("click",function(){
-  $('.buscar').hide("fade"); 
-  $('.reservas').hide("fade"); 
-  $('.pre').show("fade");
-  $('.Registrarse').hide("fade"); 
+  $('.buscar').hide("fadeOut"); 
+  $('.reservas').hide("fadeOut"); 
+  $('.pre').show("fadeOut");
+  $('.Registrarse').hide("fadeOut"); 
   $('.IniciarForm').css("display","none");
    $('.RegistrarseForm').css("display","none"); 
-  $('.reg').show("fade");
-  $('.ini').show("fade");
+  $('.reg').show("fadeOut");
+  $('.ini').show("fadeOut");
+  $(".Registra").hide("fadeOut");
+  $(".Iniciar").hide("fadeOut");
+ $(".Menumovil").hide("fadeOut");
 
 });
 $('.Buscar-movil').on("focus",function(){
@@ -58,7 +61,7 @@ $('.reg').on("click",function(){
   
 });
 
-/*   */
+/*  Formularios */
 $(".Registra").hide();
 $(".Iniciar").hide();
 $('.inis').on("click",function(){
@@ -69,3 +72,7 @@ $('.regs').on("click",function(){
   
 });
 
+/*Menu Movil*/
+$('.Menumovil-icono').on("click",function(){
+  $(".Menumovil").show("fadeIn");
+});

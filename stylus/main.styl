@@ -40,8 +40,7 @@ body
 		&Img
 			width 130px
 			
-	.Menumovil
-		display none
+	
 	.Menumovil-icono
 		display inline-block
 		float right
@@ -53,6 +52,54 @@ body
 			display: block;
 			margin-bottom: 0.2em;
 			background-color: azul;
+.Menumovil
+	display none	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #0086d4;
+	z-index: 2;
+	top: 0;
+	.cerrar
+		position: absolute;
+		right: 0;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
+		span
+			color white
+			font-size 1.5em
+	.Menumovil-ul
+		text-align: center
+		position relative
+		top 30%
+		.Menumovil-item
+			list-style: none;
+			display: inline-block;
+			width: 100%;
+			.Menumovil-link		
+				width: 100%;
+				padding: 1em;
+				box-sizing: border-box;
+				position: relative;
+				display: block;
+				color: white;
+				text-decoration: none;
+				font-size: .9em;
+				text-transform: uppercase;
+		.lol
+			width: 100%;
+			padding: 1em;
+			box-sizing: border-box;
+			position: relative;
+			display: block;
+			color: white;
+			text-decoration: none;
+			font-size: .9em;
+			text-transform: uppercase;
+			
+		.Iactive
+			border-bottom: 2px solid white;
+				
 .Reservar
 	position: fixed;
 	bottom: 40px;
@@ -284,17 +331,28 @@ body
 			margin-top: 0.5em;
 			
 /*Registra inicia*/
+.Iniciar
 .Registra
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	top: 0;
 	background: rgba(6, 6, 6, 0.52);
 	width: 100%;
 	height: 100%;
 	text-align: center;
 	.Registrarse-formulario
-		display inline-block
-		max-width 400px
+		display: inline-block;
+		max-width: 246px;
+		top: 200px;
+		position: relative;
+		padding: 1em;
+		background: white;
+		border-radius: .2em;
+		.cerrar
+			position: absolute;
+			right: 0;
+			margin-right: 1em;
+			cursor pointer
 		input
 			position: relative;
 			padding: .9em;
@@ -306,28 +364,8 @@ body
 			box-sizing: border-box;
 			margin-bottom 0.8em
 			width 100%
-.Iniciar
-	position: fixed;
-	z-index: 1;
-	top: 0;
-	background: rgba(6, 6, 6, 0.52);
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	.Registrarse-formulario
-		display inline-block
-		max-width 400px
-		input
-			position: relative;
-			padding: .9em;
-			text-align: center;
-			/* padding-right: 3em; */
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			-webkit-box-sizing: border-box;
-			box-sizing: border-box;
-			margin-bottom 0.8em
-			width 100%
+
+
 	
 
 /*Busqueda*/
@@ -645,10 +683,15 @@ body
 					width 100%
 					height 400px
 	.HotelFrase
-		margin-top: 192px;
+		margin-top: 145px;
 		
 		
 @media screen and (max-width:480px)
 	.Hotel-calidadSlider
 		max-width: 100% !important;
-	
+	.Iniciar
+	.Registra
+		.Registrarse-formulario
+			top: 49px;
+			position: relative;
+			
