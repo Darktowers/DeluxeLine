@@ -6,7 +6,7 @@
 // $db="deluxe";
 $usuario="root";
 $host="localhost";
-$pass="";
+$pass="root";
 $db="deluxev1";
 
 $mysql=new mysqli($host,$usuario,$pass,$db);
