@@ -11,7 +11,7 @@ $("#reservar").click(function(){
 		data:{ fechaLleagada: fechaLleagada, fehcaSalida:fehcaSalida, tipoHabitacion : tipoHabitacion} ,
 		success:function(data){
 			if(data!="true"){
-				alert("todo al pelo no ha iniciado sesion");
+				// alert("todo al pelo no ha iniciado sesion");
 			}
 			else{
 				if(data=="true"){

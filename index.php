@@ -96,7 +96,7 @@ session_start();
 				</div>
 				<div class="BuscarHabitacion-contenedorFormFechas">
 					<input type="text" name="FechaLLegada" id="FechaLLegada-2" placeholder="LLegada" class="llegada lol" required>
-					<input type="text" name="FechaSalida" id="FechaSalida-2" placeholder="Salida" class="salida lol" required>
+					<input type="text" name="FechaSalida" id="FechaSalida-2" placeholder="Salida" class="salida lolFin" required>
 				</div>
 				<button type="submit" class="BuscarHabitacion-botonBuscar">Buscar Habitaciones <span class="icon-search"></span></button>
 			</form>

@@ -104,11 +104,12 @@ if($_POST){
 					</select>
 				</div>
 				<div class="BuscarHabitacion-contenedorFormFechas">
-					<input type="text" name="FechaLLegada"placeholder="LLegada" class="llegada date" value="<?php echo $FechaLLegada ?>">
-					<input type="text" name="FechaSalida" placeholder="Salida" class="salida date" value="<?php echo $FechaSalida ?>">
+					<input type="text" id="fechaPreReservaLlegada" name="FechaLLegada"placeholder="LLegada" class="llegada date" value="<?php echo $FechaLLegada ?>">
+					<input type="text" id="fechaPreReservaSalida" name="FechaSalida" placeholder="Salida" class="salida dateFin" value="<?php echo $FechaSalida ?>">
 					<input type='hidden' name='FechaLLegada' id='fechaLlegada' value='<?php echo $FechaLLegada ?>'>
 					<input type='hidden' name='FechaSalida' id='fechaSalida' value='<?php echo $FechaSalida ?>'>
 					<input type='hidden' name='idHabitacion' id='tipoHabitacion' value='<?php echo $idHabitacion ?>'>
+					<input type='hidden' name='precioHabitacion' id="precioHabitacion" value='<?php echo $precio ?>'>
 				
 				</div>
 				<div class="table">
@@ -117,11 +118,11 @@ if($_POST){
 							<td>
         						Precio x 1 noche
       						</td>
-							<td>$<?php echo $precio ?></td>
+							<td >$<?php echo $precio ?></td>
 						</tr>
 						<tr>
 							<td>Total</td>
-							<td>$800,000</td>
+							<td id="total"></td>
 						</tr>
 						
 					</table>
@@ -244,4 +245,5 @@ elseif(!$_POST){
 <script src="js/calendario.js"></script>
 <script src="js/main.js"></script>
 <script src="js/ajaxs.js"></script>
+<script src="js/calculoDiaxNoche.js"></script>
 </html>
