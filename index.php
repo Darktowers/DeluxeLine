@@ -17,7 +17,7 @@ session_start();
 		<div class="Cabecera-logo ">
 			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
-		<div class="MenuEscritorio">
+		<div class="MenuEscritorio" >
 			<nav class="MenuEscritorio-nav">
 				<li class="MenuEscritorio-item Iactive"><a href="" class="MenuEscritorio-link">Home</a></li>
 				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Servicios</a></li>
@@ -54,7 +54,7 @@ session_start();
 					<span class="icon-search"></span>
 				</div>
 			</div>
-			<div class="BuscarEscritorio">
+			<div class="BuscarEscritorio" id="BuscarEscritorio">
 			<form action="buscar.php" method="post" class="BuscarEscritorio-form">
 				<div class="BuscarEscritorio-contenedorForm">
 					

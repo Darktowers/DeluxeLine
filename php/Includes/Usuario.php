@@ -75,7 +75,7 @@ session_start();
 	function iniciarSesion($email,$passI) {
 		include 'conexion.php';
 		$passwordI = md5($passI);
-		echo $passwordI;
+		
 		$query = "SELECT * FROM Usuario WHERE email = '".$email."' AND password = '".$passwordI."'";
 		$rs2 = $mysql->query($query);
 		//Se valida que la consulta regrese un array de lo contrario, se toma como string

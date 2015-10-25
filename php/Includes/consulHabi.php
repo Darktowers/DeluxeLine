@@ -95,7 +95,7 @@ class consulHabi
 						
 						while ($resl5 = $resultado5->fetch_assoc()) {
 							echo'<div class="Servicio">
-									<span class="Servicio-icono"><img src="'.$resl5['urlImgServicio'].'" alt=""></span>
+									<span class="Servicio-icono"><img src="'.$resl5['urlImgServicio'].'" alt=""title="'.$resl5['nombreServicio'].'"></span>
 									<p class="Text">'.$resl5['nombreServicio'].'</p>
 								</div>
 								';
