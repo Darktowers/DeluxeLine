@@ -34,7 +34,8 @@ $("#registrar").click(function(){
 		url:"php/Includes/registrar.php",
 		data:{ nombre: nombre, cedula:cedula, pass: password, email: email} ,
 		success:function(data){
-			alert(data);			
+			$("#errorr").show("fade");	
+			$("#errorr").html(data);		
 		}
 	});
 });
@@ -49,7 +50,8 @@ $("#inicio").click(function(){
 		url:"php/Includes/inicio.php",
 		data:{pass: passwordInicio, email: emailInicio} ,
 		success:function(data){
-			alert(data);			
+			$("#errori").show("fade");	
+			$("#errori").html(data);			
 		}
 	});
 });

@@ -13,6 +13,14 @@ negro = #2e2f33
 blanco= #fff
 blanco-tenue= #EDEFED
 naranja = #FF3D00
+.error
+	display none
+	width: 100%;
+	background: rgba(255, 59, 0, 0.92);
+	color: white;
+	padding: 1em;
+	box-sizing: border-box;
+	margin-bottom: 0.1em;
 .wrap
 	overflow: hidden;
 	max-width: 800px;
@@ -463,15 +471,26 @@ body
 		font-size: 1em;
 		text-align: center;
 	.Servicio
+		width: 147px;
+		background: rgba(5, 140, 218, 0.56);
+		height: 132px;
+		padding: 1em;
 		display: inline-block;
-		min-width 82px
+		border: 1px solid #058CDA;
+		margin: 0;
+		box-sizing: border-box;
+		margin-bottom: 0.2em;
+		position: relative;
 		.Servicio-icono
 			display: inline-block;
 			img
 				max-width: 40px;
 		.Text
-			font-size 1.2em
-			margin 0
+			font-size: 1.2em;
+			position: absolute;
+			bottom: 1em;
+			margin: 0 auto;
+			width: 111px;
 		.Number
 			display block
 

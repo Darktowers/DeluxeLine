@@ -134,15 +134,16 @@ if($_POST){
 				<div class="Registrarse-message reg" style="margin-top: 1em;">
 					<span class="icon-newspaper"></span>
 					<p>Registrate para poder reservar</p>
-
+				
 				</div>
 				<div class="Registrarse-message ini">
 					<span class="icon-user"></span>
 					<p>Iniciar sesion</p>
 				</div>
 			<form action="php/registrarse.php" class="RegistrarseForm">
-				
+			
 				<div class="Registrarse-formulario">
+					<div id="errorr" class="error">Error</div>
 					<!-- <form > -->
 						<input type="text" name="nombre" id="nombre" placeholder="Nombre">
 						<input type="number" name="cedula" id="cedula" placeholder="Cedula">
@@ -158,6 +159,7 @@ if($_POST){
 			<form action=" " class="IniciarForm">
 				
 				<div class="Registrarse-formulario">
+					<div id="errori" class="error">Error</div>
 					<!-- <form action="registrar.php"> -->
 						<input type="email" name="email" id="emailInicio" placeholder="Correo Electronico">
 						<input type="password" name="pass" id="passInicio" placeholder="Contraseña">
