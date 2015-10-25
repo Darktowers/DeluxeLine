@@ -60,11 +60,17 @@ naranja = #FF3D00
 .Contenido
 	.Cont
 		text-align center
+		display: block;
+		max-width: 758px;
+		margin: 0px auto;
 		.Servicio
 			width: 100%;
 			/* padding: 1em; */
 			box-sizing: border-box;
 			position: relative;
+			max-width: 295px;
+			display: inline-block;
+			cursor pointer
 			img
 				border: 0;
 				width: 100%;
@@ -82,10 +88,35 @@ naranja = #FF3D00
 				height: 100%;
 				position: absolute;
 				background-color: rgba(0, 0, 0, 0.29);
+		
+			.Pedir
+				position: absolute;
+				bottom: 0;
+				background: rgba(5, 140, 218, 0);
+				border: 0;
+				color: rgba(255, 236, 227, 0);
+				padding: 1em;
+				font-weight: bold;
+				text-transform: uppercase;
+				left: 0;
+				right: 0;
+				-o-transition: all 1s ease-in-out;
+				-ms-transition: all 1s ease-in-out;
+				-moz-transition: all 1s ease-in-out;
+				-webkit-transition: all 1s ease-in-out;
+				transition: all 1s ease-in-out;
+				width: 100%;
+	
+				
+		.Servicio:hover .Pedir
+			background: rgb(5, 140, 218);
+			color blanco
+			
 								
 		
 .Escritorio
 	display none
+	
 			
 @media screen and (min-width:766px)
 
