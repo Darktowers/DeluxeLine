@@ -60,7 +60,7 @@ session_start();
 					
 		
 					<input type="text" name="FechaLLegada" id="FechaLLegada-1" placeholder="LLegada" class="llegada date" required>
-					<input type="text" name="FechaSalida" id="FechaSalida-1" placeholder="Salida" class="salida date" required>
+					<input type="text" name="FechaSalida" id="FechaSalida-1" placeholder="Salida" class="salida dateFin" required>
 					<select name="NumeroHuespedes" id="" class="huespedes">
 						
 						<option value="1" selected>1 huesped</option>
