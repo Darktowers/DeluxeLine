@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.3.11
+-- version 4.2.11
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-10-2015 a las 04:27:02
--- Versión del servidor: 5.6.24
--- Versión de PHP: 5.6.8
+-- Tiempo de generación: 25-10-2015 a las 17:07:26
+-- Versión del servidor: 5.6.21
+-- Versión de PHP: 5.6.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `datos` (
-  `idDatos` int(4) NOT NULL,
+`idDatos` int(4) NOT NULL,
   `fkIdTIpoDatos` int(4) DEFAULT NULL,
   `fkIdUsuarios` int(4) DEFAULT NULL,
   `descripcion` varchar(250) DEFAULT NULL
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `datos` (
 --
 
 CREATE TABLE IF NOT EXISTS `estado` (
-  `idEstado` int(4) NOT NULL,
+`idEstado` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
@@ -59,7 +59,7 @@ INSERT INTO `estado` (`idEstado`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `estadohs` (
-  `idEestadoHS` int(4) NOT NULL,
+`idEestadoHS` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
@@ -78,7 +78,7 @@ INSERT INTO `estadohs` (`idEestadoHS`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `habitacion` (
-  `idHabitacion` int(4) NOT NULL,
+`idHabitacion` int(4) NOT NULL,
   `fkIdTipoHabitacion` int(4) DEFAULT NULL,
   `codigoHabitacion` varchar(20) DEFAULT NULL,
   `fkIdTipoEstado` int(4) DEFAULT NULL
@@ -127,7 +127,7 @@ INSERT INTO `habitacion` (`idHabitacion`, `fkIdTipoHabitacion`, `codigoHabitacio
 --
 
 CREATE TABLE IF NOT EXISTS `habitacionservicio` (
-  `idHabitacionServicio` int(11) NOT NULL,
+`idHabitacionServicio` int(11) NOT NULL,
   `fkIdHabitacion` int(4) DEFAULT NULL,
   `fkIdServicio` int(4) DEFAULT NULL,
   `fkIdEstadoHS` int(4) DEFAULT NULL
@@ -203,7 +203,7 @@ INSERT INTO `habitacionservicio` (`idHabitacionServicio`, `fkIdHabitacion`, `fkI
 --
 
 CREATE TABLE IF NOT EXISTS `imageneshabitacion` (
-  `idImagenesHabitacion` int(4) NOT NULL,
+`idImagenesHabitacion` int(4) NOT NULL,
   `fkIdHabitacion` int(4) DEFAULT NULL,
   `urlImagenHabitacion` varchar(9999) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -215,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `imageneshabitacion` (
 --
 
 CREATE TABLE IF NOT EXISTS `ofertas` (
-  `idOferta` int(4) NOT NULL,
+`idOferta` int(4) NOT NULL,
   `fechaInicioOferta` date DEFAULT NULL,
   `fechaFinOferta` date DEFAULT NULL,
   `fkIdTipoOferta` int(4) DEFAULT NULL,
@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `ofertas` (
 --
 
 CREATE TABLE IF NOT EXISTS `reserva` (
-  `idReserva` int(4) NOT NULL,
+`idReserva` int(4) NOT NULL,
   `fkIdUsuario` int(4) DEFAULT NULL,
   `fkIdHabitacion` int(4) DEFAULT NULL,
   `precioFinal` int(20) DEFAULT NULL,
@@ -246,7 +246,7 @@ CREATE TABLE IF NOT EXISTS `reserva` (
 --
 
 CREATE TABLE IF NOT EXISTS `reservaservicio` (
-  `idReservaServicio` int(4) NOT NULL,
+`idReservaServicio` int(4) NOT NULL,
   `fkIdServicio` int(4) DEFAULT NULL,
   `fkIdReserva` int(4) DEFAULT NULL,
   `precio` int(20) DEFAULT NULL
@@ -259,7 +259,7 @@ CREATE TABLE IF NOT EXISTS `reservaservicio` (
 --
 
 CREATE TABLE IF NOT EXISTS `rolusuario` (
-  `idRolUsuario` int(4) NOT NULL,
+`idRolUsuario` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
@@ -278,7 +278,7 @@ INSERT INTO `rolusuario` (`idRolUsuario`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `servicio` (
-  `idServicio` int(4) NOT NULL,
+`idServicio` int(4) NOT NULL,
   `nombreServicio` varchar(120) DEFAULT NULL,
   `urlImgServicio` varchar(9999) NOT NULL,
   `fkTipoServicio` int(4) DEFAULT NULL
@@ -318,7 +318,7 @@ INSERT INTO `servicio` (`idServicio`, `nombreServicio`, `urlImgServicio`, `fkTip
 --
 
 CREATE TABLE IF NOT EXISTS `servicioconcosto` (
-  `idServicioConCosto` int(4) NOT NULL,
+`idServicioConCosto` int(4) NOT NULL,
   `fkIdServicio` int(4) DEFAULT NULL,
   `descripcion` varchar(120) DEFAULT NULL,
   `precio` int(50) DEFAULT NULL
@@ -331,7 +331,7 @@ CREATE TABLE IF NOT EXISTS `servicioconcosto` (
 --
 
 CREATE TABLE IF NOT EXISTS `tipodatos` (
-  `idTipoDatos` int(4) NOT NULL,
+`idTipoDatos` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
@@ -350,7 +350,7 @@ INSERT INTO `tipodatos` (`idTipoDatos`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tipoestado` (
-  `idTipoEstado` int(4) NOT NULL,
+`idTipoEstado` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
@@ -370,7 +370,7 @@ INSERT INTO `tipoestado` (`idTipoEstado`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tipohabitacion` (
-  `idTipoHabitacion` int(4) NOT NULL,
+`idTipoHabitacion` int(4) NOT NULL,
   `nombreHabitacion` varchar(20) DEFAULT NULL,
   `descripcionHabitacion` varchar(9999) NOT NULL DEFAULT '',
   `precio` int(15) DEFAULT NULL,
@@ -386,7 +386,7 @@ INSERT INTO `tipohabitacion` (`idTipoHabitacion`, `nombreHabitacion`, `descripci
 (1, 'Business Room', 'cogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 483529, 2, 20),
 (2, 'Standard Room', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 483529, 2, 20),
 (3, 'Comfort Room', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 528751, 3, 26),
-(4, 'Superior Room', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 775734, 3, 36),
+(4, 'Supeior Room', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 775734, 3, 36),
 (5, 'Junior Suite', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 967058, 4, 50),
 (6, 'Suite', 'Acogedora y confortable es el alojamiento perfecto para personas en viaje de negocios, equipadas con los mejores servicios tecnológicos, conexión gratuita a internet de alta velocidad, minibar, caja fuerte, teléfono con linea directa desde la habitación TV LCD de pantalla plana. La habitación individual pone a su disposición una cama grande estilo francés y si lo desea es posible solicitar la habitación doble para uso individual.', 1106204, 4, 60);
 
@@ -397,7 +397,7 @@ INSERT INTO `tipohabitacion` (`idTipoHabitacion`, `nombreHabitacion`, `descripci
 --
 
 CREATE TABLE IF NOT EXISTS `tipooferta` (
-  `idTipoOferta` int(4) NOT NULL,
+`idTipoOferta` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
@@ -416,7 +416,7 @@ INSERT INTO `tipooferta` (`idTipoOferta`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `tiposervicio` (
-  `idTipoServicio` int(4) NOT NULL,
+`idTipoServicio` int(4) NOT NULL,
   `descripcion` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
@@ -437,20 +437,21 @@ INSERT INTO `tiposervicio` (`idTipoServicio`, `descripcion`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `usuario` (
-  `idUsuario` int(11) NOT NULL,
+`idUsuario` int(11) NOT NULL,
   `nombre` varchar(200) DEFAULT NULL,
   `cedula` int(15) DEFAULT NULL,
   `password` varchar(200) DEFAULT NULL,
   `fkIdRolUsuario` int(4) DEFAULT NULL,
-  `email` varchar(200) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+  `email` varchar(150) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `usuario` (`idUsuario`, `nombre`, `cedula`, `password`, `fkIdRolUsuario`, `email`) VALUES
-(1, 'William Bernal', 1013658776, 'e31c6f3f16cc0a094e0716fb201caf02', 1, 'willtf.wb@gmail.com');
+(8, 'William', 1013658776, 'e31c6f3f16cc0a094e0716fb201caf02', 1, 'wbernal@ultimateboost.com'),
+(9, 'William', 1013658776, '81dc9bdb52d04dc20036dbd8313ed055', 1, 'wbernal@lala.com');
 
 -- --------------------------------------------------------
 
@@ -459,7 +460,7 @@ INSERT INTO `usuario` (`idUsuario`, `nombre`, `cedula`, `password`, `fkIdRolUsua
 --
 
 CREATE TABLE IF NOT EXISTS `valoroferta` (
-  `idValorOferta` int(4) NOT NULL,
+`idValorOferta` int(4) NOT NULL,
   `descripcion` varchar(200) DEFAULT NULL,
   `fkIdOferta` int(4) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -472,115 +473,115 @@ CREATE TABLE IF NOT EXISTS `valoroferta` (
 -- Indices de la tabla `datos`
 --
 ALTER TABLE `datos`
-  ADD PRIMARY KEY (`idDatos`), ADD KEY `fkIdUsuarios` (`fkIdUsuarios`), ADD KEY `fkIdTIpoDatos` (`fkIdTIpoDatos`);
+ ADD PRIMARY KEY (`idDatos`), ADD KEY `fkIdUsuarios` (`fkIdUsuarios`), ADD KEY `fkIdTIpoDatos` (`fkIdTIpoDatos`);
 
 --
 -- Indices de la tabla `estado`
 --
 ALTER TABLE `estado`
-  ADD PRIMARY KEY (`idEstado`);
+ ADD PRIMARY KEY (`idEstado`);
 
 --
 -- Indices de la tabla `estadohs`
 --
 ALTER TABLE `estadohs`
-  ADD PRIMARY KEY (`idEestadoHS`);
+ ADD PRIMARY KEY (`idEestadoHS`);
 
 --
 -- Indices de la tabla `habitacion`
 --
 ALTER TABLE `habitacion`
-  ADD PRIMARY KEY (`idHabitacion`), ADD KEY `fkIdTipoHabitacion` (`fkIdTipoHabitacion`), ADD KEY `fkIdTipoEstado` (`fkIdTipoEstado`);
+ ADD PRIMARY KEY (`idHabitacion`), ADD KEY `fkIdTipoHabitacion` (`fkIdTipoHabitacion`), ADD KEY `fkIdTipoEstado` (`fkIdTipoEstado`);
 
 --
 -- Indices de la tabla `habitacionservicio`
 --
 ALTER TABLE `habitacionservicio`
-  ADD PRIMARY KEY (`idHabitacionServicio`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`), ADD KEY `fkIdEstadoHS` (`fkIdEstadoHS`), ADD KEY `fkIdServicio` (`fkIdServicio`);
+ ADD PRIMARY KEY (`idHabitacionServicio`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`), ADD KEY `fkIdEstadoHS` (`fkIdEstadoHS`), ADD KEY `fkIdServicio` (`fkIdServicio`);
 
 --
 -- Indices de la tabla `imageneshabitacion`
 --
 ALTER TABLE `imageneshabitacion`
-  ADD PRIMARY KEY (`idImagenesHabitacion`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`);
+ ADD PRIMARY KEY (`idImagenesHabitacion`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`);
 
 --
 -- Indices de la tabla `ofertas`
 --
 ALTER TABLE `ofertas`
-  ADD PRIMARY KEY (`idOferta`), ADD KEY `fkIdTipoHabitacion` (`fkIdTipoHabitacion`), ADD KEY `fkIdTipoOferta` (`fkIdTipoOferta`);
+ ADD PRIMARY KEY (`idOferta`), ADD KEY `fkIdTipoHabitacion` (`fkIdTipoHabitacion`), ADD KEY `fkIdTipoOferta` (`fkIdTipoOferta`);
 
 --
 -- Indices de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  ADD PRIMARY KEY (`idReserva`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`), ADD KEY `fkIdUsuario` (`fkIdUsuario`), ADD KEY `fkIdEstado` (`fkIdEstado`);
+ ADD PRIMARY KEY (`idReserva`), ADD KEY `fkIdHabitacion` (`fkIdHabitacion`), ADD KEY `fkIdUsuario` (`fkIdUsuario`), ADD KEY `fkIdEstado` (`fkIdEstado`);
 
 --
 -- Indices de la tabla `reservaservicio`
 --
 ALTER TABLE `reservaservicio`
-  ADD PRIMARY KEY (`idReservaServicio`), ADD KEY `fkIdServicio` (`fkIdServicio`), ADD KEY `fkIdReserva` (`fkIdReserva`);
+ ADD PRIMARY KEY (`idReservaServicio`), ADD KEY `fkIdServicio` (`fkIdServicio`), ADD KEY `fkIdReserva` (`fkIdReserva`);
 
 --
 -- Indices de la tabla `rolusuario`
 --
 ALTER TABLE `rolusuario`
-  ADD PRIMARY KEY (`idRolUsuario`);
+ ADD PRIMARY KEY (`idRolUsuario`);
 
 --
 -- Indices de la tabla `servicio`
 --
 ALTER TABLE `servicio`
-  ADD PRIMARY KEY (`idServicio`), ADD KEY `fkTipoServicio` (`fkTipoServicio`);
+ ADD PRIMARY KEY (`idServicio`), ADD KEY `fkTipoServicio` (`fkTipoServicio`);
 
 --
 -- Indices de la tabla `servicioconcosto`
 --
 ALTER TABLE `servicioconcosto`
-  ADD PRIMARY KEY (`idServicioConCosto`), ADD KEY `fkIdServicio` (`fkIdServicio`);
+ ADD PRIMARY KEY (`idServicioConCosto`), ADD KEY `fkIdServicio` (`fkIdServicio`);
 
 --
 -- Indices de la tabla `tipodatos`
 --
 ALTER TABLE `tipodatos`
-  ADD PRIMARY KEY (`idTipoDatos`);
+ ADD PRIMARY KEY (`idTipoDatos`);
 
 --
 -- Indices de la tabla `tipoestado`
 --
 ALTER TABLE `tipoestado`
-  ADD PRIMARY KEY (`idTipoEstado`);
+ ADD PRIMARY KEY (`idTipoEstado`);
 
 --
 -- Indices de la tabla `tipohabitacion`
 --
 ALTER TABLE `tipohabitacion`
-  ADD PRIMARY KEY (`idTipoHabitacion`);
+ ADD PRIMARY KEY (`idTipoHabitacion`);
 
 --
 -- Indices de la tabla `tipooferta`
 --
 ALTER TABLE `tipooferta`
-  ADD PRIMARY KEY (`idTipoOferta`);
+ ADD PRIMARY KEY (`idTipoOferta`);
 
 --
 -- Indices de la tabla `tiposervicio`
 --
 ALTER TABLE `tiposervicio`
-  ADD PRIMARY KEY (`idTipoServicio`);
+ ADD PRIMARY KEY (`idTipoServicio`);
 
 --
 -- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  ADD PRIMARY KEY (`idUsuario`), ADD KEY `fkIdRolUsuario` (`fkIdRolUsuario`);
+ ADD PRIMARY KEY (`idUsuario`), ADD KEY `fkIdRolUsuario` (`fkIdRolUsuario`);
 
 --
 -- Indices de la tabla `valoroferta`
 --
 ALTER TABLE `valoroferta`
-  ADD PRIMARY KEY (`idValorOferta`), ADD KEY `fkIdOferta` (`fkIdOferta`);
+ ADD PRIMARY KEY (`idValorOferta`), ADD KEY `fkIdOferta` (`fkIdOferta`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -590,97 +591,97 @@ ALTER TABLE `valoroferta`
 -- AUTO_INCREMENT de la tabla `datos`
 --
 ALTER TABLE `datos`
-  MODIFY `idDatos` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idDatos` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `estado`
 --
 ALTER TABLE `estado`
-  MODIFY `idEstado` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `idEstado` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `estadohs`
 --
 ALTER TABLE `estadohs`
-  MODIFY `idEestadoHS` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `idEestadoHS` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `habitacion`
 --
 ALTER TABLE `habitacion`
-  MODIFY `idHabitacion` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
+MODIFY `idHabitacion` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=31;
 --
 -- AUTO_INCREMENT de la tabla `habitacionservicio`
 --
 ALTER TABLE `habitacionservicio`
-  MODIFY `idHabitacionServicio` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=114;
+MODIFY `idHabitacionServicio` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=114;
 --
 -- AUTO_INCREMENT de la tabla `imageneshabitacion`
 --
 ALTER TABLE `imageneshabitacion`
-  MODIFY `idImagenesHabitacion` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idImagenesHabitacion` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `ofertas`
 --
 ALTER TABLE `ofertas`
-  MODIFY `idOferta` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idOferta` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `idReserva` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idReserva` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `reservaservicio`
 --
 ALTER TABLE `reservaservicio`
-  MODIFY `idReservaServicio` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idReservaServicio` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `rolusuario`
 --
 ALTER TABLE `rolusuario`
-  MODIFY `idRolUsuario` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `idRolUsuario` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `servicio`
 --
 ALTER TABLE `servicio`
-  MODIFY `idServicio` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
+MODIFY `idServicio` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT de la tabla `servicioconcosto`
 --
 ALTER TABLE `servicioconcosto`
-  MODIFY `idServicioConCosto` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idServicioConCosto` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `tipodatos`
 --
 ALTER TABLE `tipodatos`
-  MODIFY `idTipoDatos` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `idTipoDatos` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tipoestado`
 --
 ALTER TABLE `tipoestado`
-  MODIFY `idTipoEstado` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `idTipoEstado` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `tipohabitacion`
 --
 ALTER TABLE `tipohabitacion`
-  MODIFY `idTipoHabitacion` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `idTipoHabitacion` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `tipooferta`
 --
 ALTER TABLE `tipooferta`
-  MODIFY `idTipoOferta` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+MODIFY `idTipoOferta` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tiposervicio`
 --
 ALTER TABLE `tiposervicio`
-  MODIFY `idTipoServicio` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `idTipoServicio` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+MODIFY `idUsuario` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `valoroferta`
 --
 ALTER TABLE `valoroferta`
-  MODIFY `idValorOferta` int(4) NOT NULL AUTO_INCREMENT;
+MODIFY `idValorOferta` int(4) NOT NULL AUTO_INCREMENT;
 --
 -- Restricciones para tablas volcadas
 --
