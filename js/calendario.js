@@ -23,22 +23,30 @@
 // 	});
 
 // });
+
+
+
 $(function() {
 
 	$("#FechaLLegada-1").on("focus",function(){
 		$('#hideKeyboard').focus();
+		$("#FechaLLegada-1").blur();
 	});
 	$("#FechaSalida-1").on("focus",function(){
 		$('#hideKeyboard').focus();
+		$("#FechaSalida-1").blur();
 	});
 	$("#FechaLLegada-2").on("focus",function(){
 		$('#hideKeyboard').focus();
+		$("#FechaLLegada-2").blur();
 	});
 	$("#FechaSalida-2").on("focus",function(){
 		$('#hideKeyboard').focus();
+		$("#FechaSalida-2").blur();
 	});
 	$("#BuscarM").on("focus",function(){
 		$('#hideKeyboard').focus();
+		$("#BuscarM").blur();
 	});
 	
 		
