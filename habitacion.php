@@ -29,7 +29,7 @@ if($_POST){
 ?>
 <body>
 	<header class="Cabecera cab">
-		<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1;" type="text" name="hideKeyboard" readonly="readonly" />
+		<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1; opacity: 0;" type="text" name="hideKeyboard" readonly="readonly" />
 	<div class="Cabecera-logo escritorio">
 			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
