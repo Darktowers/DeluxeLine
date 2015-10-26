@@ -86,8 +86,8 @@ session_start();
 				if ($row == 1) {
 					
 						$_SESSION['activo']=true;
-						$_SESSION['usuario']=$row['nombre'];
-						$_SESSION['rol']=$row['fkIdRolUsuario'];
+						$_SESSION['usuario']=$resl['nombre'];
+						$_SESSION['rol']=$resl['fkIdRolUsuario'];
 						return "true";
 					}elseif($row < 1){
 						return "Usuario o Contraseña Incorrectos";

@@ -6,21 +6,25 @@ var MinDate;
     	} 
     });
 
-	$('.dateFin').datepicker({ onClose: function( selectedDate ) {
-        $( ".date" ).datepicker( "option", "maxDate", selectedDate );
-      }
-    });
+	$('.dateFin').datepicker(
+		// { onClose: function( selectedDate ) {
+  //       $( ".date" ).datepicker( "option", "maxDate", "+1m" );
+  //     }
+  //   }
+    );
 	
 
 	$('.lol').datepicker({ minDate: 0, onClose: function( selectedDate ) {
-        $( ".dateFin" ).datepicker( "option", "minDate", selectedDate );
+        $( ".lolFin" ).datepicker( "option", "minDate", selectedDate );
     	} 
     });
 
-	$('.lolFin').datepicker({ onClose: function( selectedDate ) {
-        $( ".lol" ).datepicker( "option", "maxDate", selectedDate );
-      }
-    });
+	$('.lolFin').datepicker(
+	// { onClose: function( selectedDate ) {
+ //        $( ".lol" ).datepicker( "option", "maxDate", "+1m" );
+ //      }
+ //    }
+    );
 	
 	
 });

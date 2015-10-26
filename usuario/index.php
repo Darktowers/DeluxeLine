@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +13,44 @@
 </head>
 
 <body>
-	<header class="Cabecera">
+	<?php
+	if(@$_SESSION['activo']==true){
+
+	echo'
+		<header class="Cabecera">
+		<div class="Cabecera-logo ">
+			<img class="Cabecera-logoImg" src="../img/logodeluxeline.png" alt="Logo DeluxeLine">
+		</div>
+		<div class="MenuEscritorio">
+			<nav class="MenuEscritorio-nav">
+				<li class="MenuEscritorio-item Iactive"><a href="" class="MenuEscritorio-link ">Principal</a></li>
+				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
+			</nav>
+		</div>
+		<div class="Menumovil">
+			<nav class="Menumovil-ul">
+				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
+				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
+			</nav>
+		</div>
+		<div class="Menumovil-icono">
+			<span class="Menumovil-grid"></span>
+			<span class="Menumovil-grid"></span>
+			<span class="Menumovil-grid"></span>
+		</div>
+		</header>
+
+	';
+
+	}
+	elseif(@$_SESSION['activo']!=true){
+		header('location:../index.php');
+	}
+	?>
+	<!-- <header class="Cabecera">
 		<div class="Cabecera-logo ">
 			<img class="Cabecera-logoImg" src="../img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
@@ -34,7 +74,7 @@
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 		</div>
-	</header>
+	</header> -->
 
 
 	<div class="Menu-s">

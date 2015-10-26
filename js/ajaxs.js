@@ -15,7 +15,8 @@ $("#reservar").click(function(){
 			}
 			else{
 				if(data=="true"){
-					alert("donde /&/& esta el boton de pago aqui redirecciona a esa vaina");
+					alert("Su Reserva fue asignada");
+					document.location=("usuario/index.php");
 				}
 			}
 							
@@ -34,8 +35,11 @@ $("#registrar").click(function(){
 		url:"php/Includes/registrar.php",
 		data:{ nombre: nombre, cedula:cedula, pass: password, email: email} ,
 		success:function(data){
-			$("#errorr").show("fade");	
-			$("#errorr").html(data);		
+			if(data=="true"){document.location=("usuario/index.php");}
+			else{
+				$("#errorr").show("fade");	
+				$("#errorr").html(data);		
+			}
 		}
 	});
 });
@@ -50,8 +54,11 @@ $("#inicio").click(function(){
 		url:"php/Includes/inicio.php",
 		data:{pass: passwordInicio, email: emailInicio} ,
 		success:function(data){
+			if(data=="true"){document.location=("usuario/index.php");}
+			else{
 			$("#errori").show("fade");	
-			$("#errori").html(data);			
+			$("#errori").html(data);	
+			}		
 		}
 	});
 });

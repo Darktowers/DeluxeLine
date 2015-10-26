@@ -18,10 +18,13 @@ $(function(){
 	});
 	function tomalonuevo(){
 		calculoChange=cambio2.getDate() - cambio1.getDate();
-		 if(calculoChange<=0){
+		 if(calculoChange<0){
+
 		// 	$('#fechaPreReservaLlegada').val(cambio2);
 		// 	$('#fechaPreReservaSalida').val(cambio1);
-		 	calculoChange= cambio1.getDate()-cambio2.getDate();
+		 	// calculoChange= cambio1.getDate()-cambio2.getDate();
+		 	calculoChange=calculoChange+31;
+		 	
 		 }
 			
 			var calculoNuevo=parseInt(calculoChange)*parseInt(precio);
