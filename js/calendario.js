@@ -24,6 +24,20 @@
 
 // });
 $(function() {
+
+	$("#FechaLLegada-1").on("focus",function(){
+		$('#hideKeyboard').focus();
+	});
+	$("#FechaSalida-1").on("focus",function(){
+		$('#hideKeyboard').focus();
+	});
+	$("#FechaLLegada-2").on("focus",function(){
+		$('#hideKeyboard').focus();
+	});
+	$("#FechaSalida-2").on("focus",function(){
+		$('#hideKeyboard').focus();
+	});
+		
 		
 var MinDate;
 var MinDate2;		
