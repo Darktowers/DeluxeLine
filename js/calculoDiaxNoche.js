@@ -18,13 +18,11 @@ $(function(){
 	});
 	function tomalonuevo(){
 		calculoChange=cambio2.getDate() - cambio1.getDate();
-		if(calculoChange<=0){
-			$('#fechaPreReservaLlegada').val(cambio2);
-			$('#fechaPreReservaSalida').val(cambio1);
-			// $('.date').datepicker({ minDate: cambio2 });
-			// $('.dateFin').datepicker({ minDate: cambio1 });
-			calculoChange= cambio1.getDate()-cambio2.getDate();
-		}
+		 if(calculoChange<=0){
+		// 	$('#fechaPreReservaLlegada').val(cambio2);
+		// 	$('#fechaPreReservaSalida').val(cambio1);
+		 	calculoChange= cambio1.getDate()-cambio2.getDate();
+		 }
 			
 			var calculoNuevo=parseInt(calculoChange)*parseInt(precio);
 			$("#total").text("$"+calculoNuevo);
