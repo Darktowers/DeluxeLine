@@ -63,7 +63,7 @@ session_start();
 					
 		
 					<input type="text" name="FechaLLegada" id="FechaLLegada-1" placeholder="LLegada" class="llegada date" required>
-					<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1;" type="text" name="hideKeyboard" readonly="readonly" />
+					<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1;opacity: 0;" type="text" name="hideKeyboard" readonly="readonly" />
 					<input type="text" name="FechaSalida" id="FechaSalida-1" placeholder="Salida" class="salida dateFin" required>
 					<select name="NumeroHuespedes" id="" class="huespedes">
 						
