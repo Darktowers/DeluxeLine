@@ -52,7 +52,7 @@ session_start();
 		<section class="HotelFrase">
 			<h1>Disfruta del hotel de tus sueños</h1>
 			<div class="Buscar-movil">
-				<input type="text" class="Buscar-movilInput" placeholder="Buscar Habitaciones">
+				<input id="BuscarM" type="text" class="Buscar-movilInput" placeholder="Buscar Habitaciones">
 				<div class="Buscar">
 					<span class="icon-search"></span>
 				</div>

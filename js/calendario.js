@@ -37,6 +37,10 @@ $(function() {
 	$("#FechaSalida-2").on("focus",function(){
 		$('#hideKeyboard').focus();
 	});
+	$("#BuscarM").on("focus",function(){
+		$('#hideKeyboard').focus();
+	});
+	
 		
 		
 var MinDate;
