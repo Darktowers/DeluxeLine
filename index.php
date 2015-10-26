@@ -17,7 +17,7 @@ session_start();
 		<div class="Cabecera-logo ">
 			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
-		<div class="MenuEscritorio" >
+		<div class="MenuEscritorio">
 			<nav class="MenuEscritorio-nav">
 				<li class="MenuEscritorio-item Iactive"><a href="" class="MenuEscritorio-link">Home</a></li>
 				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Servicios</a></li>
@@ -25,20 +25,23 @@ session_start();
 				<li class="MenuEscritorio-item regs">Registrarse</li>
 			</nav>
 		</div>
-		<div class="Menumovil">
-			<nav class="Menumovil-ul">
-				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Home</a></li>
-				<li class="Menumovil-item"><a href="" class="Menumovil-link">Beneficios</a></li>
-				<li class="Menumovil-item"><a href="" class="Menumovil-link">Calidad</a></li>
-				<li class="Menumovil-item"><a href="" class="Menumovil-link">Ubicacion</a></li>
-			</nav>
-		</div>
+	
 		<div class="Menumovil-icono">
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 		</div>
 	</header>
+		<div class="Menumovil">
+		<div class="cerrar"><span class="icon-cross"></span></div>
+			<nav class="Menumovil-ul">
+
+				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Home</a></li>
+				<li class="Menumovil-item"><a href="" class="Menumovil-link">Servicios</a></li>
+				<li class="Menumovil-item inis lol">Iniciar Sesion</li>
+				<li class="Menumovil-item regs lol">Registrarse</li>
+			</nav>
+		</div>
 	<div class="Contenido-slider">
 		<div class="owl-carousel">
 		    <div class="item"><img src="img/deluxeline-pool.jpg" alt=""></div>
@@ -49,7 +52,7 @@ session_start();
 		<section class="HotelFrase">
 			<h1>Disfruta del hotel de tus sueños</h1>
 			<div class="Buscar-movil">
-				<input type="text" class="Buscar-movilInput" placeholder="Buscar Habitaciones">
+				<input id="BuscarM" type="text" class="Buscar-movilInput" placeholder="Buscar Habitaciones">
 				<div class="Buscar">
 					<span class="icon-search"></span>
 				</div>
@@ -60,6 +63,7 @@ session_start();
 					
 		
 					<input type="text" name="FechaLLegada" id="FechaLLegada-1" placeholder="LLegada" class="llegada date" required>
+					<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1;opacity: 0;" type="text" name="hideKeyboard" readonly="readonly" />
 					<input type="text" name="FechaSalida" id="FechaSalida-1" placeholder="Salida" class="salida dateFin" required>
 					<select name="NumeroHuespedes" id="" class="huespedes">
 						

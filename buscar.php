@@ -17,6 +17,7 @@ session_start();
 	<div class="Cabecera-logo escritorio">
 			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
+		<input id="hideKeyboard" style="position: absolute; left: 0px; top: -20px; z-index: -1;" type="text" name="hideKeyboard" readonly="readonly" />
 		<div class="MenuEscritorio">
 			<nav class="MenuEscritorio-nav">
 				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Home</a></li>
