@@ -140,18 +140,20 @@ session_start();
 
 
 
+	
 	<div class="Registra">
 
-				<p>Registrate</p>
 				<div class="Registrarse-formulario">
+<div class="cerrar"><span class="icon-cross"></span></div>
+				<p>Registrate</p>
 					<form action="registrar.php">
 						<input type="text" name="nombre" placeholder="Nombre">
 						<input type="text" name="cedula" placeholder="Cedula">
 						<input type="email" name="email" placeholder="Correo Electronico">
 						<input type="password" name="pass" placeholder="Contraseña">
 						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
-    padding: 1em;border:0;color:white;">Registrarse</button>
-    					<p style="color:white;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
+    padding: 1em;border:0;color:white;background: #05466B;">Registrarse</button>
+    					<p >Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
 					</form>
 				</div>
 				
@@ -159,19 +161,21 @@ session_start();
 			
 		</div>
 	<div class="Iniciar">
-		<p>Inicia Sesion</p>
-		<form action="php/iniciarsesion.php" class="IniciarForm">
-				
+		
+		
+			
 				<div class="Registrarse-formulario">
+				<div class="cerrar"><span class="icon-cross"></span></div>
+				<p>Inicia Sesion</p>	
 					<form action="registrar.php">
 						<input type="email" name="email" placeholder="Correo Electronico">
 						<input type="password" name="pass" placeholder="Contraseña">
 						<button class="BuscarHabitacion-botonBuscar" style="width: 100%;
-    padding: 1em;border:0; color:white;">Iniciar Sesion</button>
+    padding: 1em;border:0; color:white;background: #05466B;">Iniciar Sesion</button>
 					</form>
 				</div>
 				
-			</form>	
+			
 		</div>	
 	
 
