@@ -5,12 +5,25 @@ session_start();
 <head>
 <html lang="en">
 	<meta charset="UTF-8">
+	<link rel="shortcut icon"
+ href="favicon.ico" />
 	<title>DeluxeLine Hotel</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300,700italic,700' rel='stylesheet' type='text/css'>
-
+<style>
+	#map {
+width: 100%;
+height: 500px;
+border: 1px solid #000;
+box-sizing: border-box;
+border-top: 1em solid #058CDA;
+}
+.img-hotel{
+height:  400px;	
+}
+</style>
 </head>
 <body>
 	<?php
@@ -153,7 +166,7 @@ session_start();
 			</form>
 		</div>
 	</section>
-
+	
 	<div class="Hotel">
 		<div class="wrap">
 			<section class="Hotel-calidad">
@@ -171,16 +184,37 @@ session_start();
 		</div>
 
 	</div>
-	<section class="historia">
+	<section class="Serviciosm">
 				<h2>Disfruta Nuestros Servicios</h2>
-		
-	</section>
+				<article class="serv">1</article>
+				<article class="serv">2</article>
+				<article class="serv">3</article>
+				<article class="serv">4</article>
+				<article class="serv">5</article>
+		<div class="img-hotel" data-parallax="scroll" data-bleed="10"  data-z-index="3" data-image-src="./img/deluxeline-pool2.jpg">   
+        </div>	</section>
 	<section class="historia">
 		<article>
 				<h2>Tenemos mas de 25 años de historia</h2>
 		</article>
+
 	</section>
-	<section id="map">
+
+  <section class="Ubicacion">
+		    <div class="Contactanos">
+				<h3>Contactanos</h3>
+				<p class="correo">info@deluxehotelco.com</p>
+				<p class="tel">+57 3057129100</p>
+				
+				<div class="redes">
+					<span class="icon-facebook"></span>
+					<span class="icon-instagram"></span>
+					<span class="icon-twitter"></span>
+				</div>
+			</div>
+			<section id="map">
+
+			</section>
 	</section>
 	<footer class="hotelfooter">
 		<nav class="Hotelfooter-Links" style="    margin-right: 2em;">
@@ -275,17 +309,26 @@ session_start();
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/ajaxs.js"></script>
 <script src="js/main.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>  
+<script src="js/parallax.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&language=es"></script>
+
 <script>
 	
-var myLatlng = new google.maps.LatLng(-34.397, 150.644);
-var mapOptions = {
-  zoom: 8,
-  center: myLatlng,
-  mapTypeId: google.maps.MapTypeId.SATELLITE
-};
-var map = new google.maps.Map(document.getElementById("map"),
-    mapOptions);
+window.onload = function() {
+ var myLatLng = {lat: 11.1063435, lng: -74.2236681};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 18,
+    center: myLatLng
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!',
+    icon: 'img/hotel.png'
+  });
+}
 
 
 

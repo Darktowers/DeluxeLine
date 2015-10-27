@@ -7,6 +7,8 @@ session_start();
 	<meta charset="UTF-8">
 	<title>Buscar Habitaciones</title>
 	<link rel="stylesheet" href="js/lib/jquery-ui/jquery-ui.css">
+	<link rel="shortcut icon"
+ href="favicon.ico" />
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300,700italic,700' rel='stylesheet' type='text/css'>
