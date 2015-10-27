@@ -9,7 +9,11 @@ session_start();
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300,700italic,700' rel='stylesheet' type='text/css'>
-
+<style>
+	.Cabecera{
+			background: black !important;
+		}
+</style>
 </head>
 </head>
 <body>
@@ -19,7 +23,7 @@ session_start();
 	echo'
 		<header class="Cabecera">
 		<div class="Cabecera-logo ">
-			<img class="Cabecera-logoImg" src="../img/logodeluxeline.png" alt="Logo DeluxeLine">
+			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
 		</div>
 		<div class="MenuEscritorio">
 			<nav class="MenuEscritorio-nav">
@@ -32,8 +36,8 @@ session_start();
 		<div class="Menumovil">
 			<nav class="Menumovil-ul">
 				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
+				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Buscar Habitacion</a></li>
+				<li class="Menumovil-item "><a href="" class="Menumovil-link">'.$_SESSION['usuario'].'</a></li>
 			</nav>
 		</div>
 		<div class="Menumovil-icono">

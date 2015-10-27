@@ -40,13 +40,13 @@ body
 	width 100%
 	overflow hidden
 	border-bottom: 1px solid #058CDA;
-	z-index: 2;
+	z-index: 3;
 	&-logo
 		display inline-block
 		float left
 		margin: .5em .5em 0em .5em;
 		&Img
-			width 130px
+			width 157px
 			
 	
 	.Menumovil-icono
@@ -66,7 +66,7 @@ body
 	width: 100%;
 	height: 100%;
 	background: #0086d4;
-	z-index: 2;
+	z-index: 4;
 	top: 0;
 	.cerrar
 		position: absolute;
@@ -127,6 +127,13 @@ body
 .Contenido-slider
 	position: relative
 	top -46px
+	&:before
+		content: "";
+		background: rgba(0, 0, 0, 0.44);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
 	.owl-carousel
 		.item
 			img
@@ -134,7 +141,7 @@ body
 				height 740px
 .HotelFrase
 	bottom: 1em;
-	z-index: 1;
+	z-index: 3;
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -278,7 +285,7 @@ body
 .BuscarHabitacion
 	display: none;
 	position: fixed;
-	z-index: 2;
+	z-index: 4;
 	top: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.73);
@@ -342,7 +349,7 @@ body
 .Iniciar
 .Registra
 	position: fixed;
-	z-index: 2;
+	z-index: 4;
 	top: 0;
 	background: rgba(6, 6, 6, 0.52);
 	width: 100%;
@@ -585,6 +592,9 @@ body
 
 				
 @media screen and (min-width:766px)
+	.HotelFrase
+		h1
+			font-size 3em
 
 	.escritorio
 		display block !important

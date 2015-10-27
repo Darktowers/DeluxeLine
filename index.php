@@ -18,31 +18,34 @@ session_start();
 
 	echo'
 		<header class="Cabecera">
+
 		<div class="Cabecera-logo ">
-			<img class="Cabecera-logoImg" src="../img/logodeluxeline.png" alt="Logo DeluxeLine">
+		<a href="index.php">
+			<img class="Cabecera-logoImg" src="img/logodeluxeline.png" alt="Logo DeluxeLine">
+			</a>
 		</div>
 		<div class="MenuEscritorio">
 			<nav class="MenuEscritorio-nav">
-				<li class="MenuEscritorio-item "><a href="" class="MenuEscritorio-link ">Principal</a></li>
+				<li class="MenuEscritorio-item "><a href="usuario/index.php" class="MenuEscritorio-link ">Principal</a></li>
 				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
 				<li class="MenuEscritorio-item Iactive"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
 				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
 			</nav>
 		</div>
-		<div class="Menumovil">
-			<nav class="Menumovil-ul">
-				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
-			</nav>
-		</div>
+		
 		<div class="Menumovil-icono">
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 		</div>
 		</header>
-
+<div class="Menumovil">
+			<nav class="Menumovil-ul">
+				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
+				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Buscar Habitacion</a></li>
+				<li class="Menumovil-item "><a href="" class="Menumovil-link">'.$_SESSION['usuario'].'</a></li>
+			</nav>
+		</div>
 	';
 
 	}
@@ -168,6 +171,17 @@ session_start();
 		</div>
 
 	</div>
+	<section class="historia">
+				<h2>Disfruta Nuestros Servicios</h2>
+		
+	</section>
+	<section class="historia">
+		<article>
+				<h2>Tenemos mas de 25 años de historia</h2>
+		</article>
+	</section>
+	<section id="map">
+	</section>
 	<footer class="hotelfooter">
 		<nav class="Hotelfooter-Links" style="    margin-right: 2em;">
 			<li class="Hotelfooter-LinksItem"><a href="">Home</a></li>
@@ -201,8 +215,13 @@ session_start();
 						<input type="email" name="email" id="email" placeholder="Correo Electronico">
 						<input type="password" name="pass" id="pass" placeholder="Contraseña">
 						<label class="BuscarHabitacion-botonBuscar" id="registrar"  style="width: 100%;
-    padding: 1em;border:0;color:white;background: #05466B;">Registrarse</label>
-    					<p style="color:white;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
+    padding: 1em;
+    border: 0;
+    color: white;
+    background: #05466B;
+    display: block;
+    box-sizing: border-box;">Registrarse</label>
+    					<p style="color:black;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
 				<!-- </form> -->
 					<!-- <form action="registrar.php">
 						<input type="text" name="nombre" placeholder="Nombre">
@@ -230,7 +249,12 @@ session_start();
 						<input type="email" name="email" id="emailInicio" placeholder="Correo Electronico">
 						<input type="password" name="pass" id="passInicio" placeholder="Contraseña">
 						<label class="BuscarHabitacion-botonBuscar" id="inicio" style="width: 100%;
-    padding: 1em;border:0; color:white;background: #05466B;">Iniciar Sesion</label>
+    padding: 1em;
+    border: 0;
+    color: white;
+    background: #05466B;
+    display: block;
+    box-sizing: border-box;">Iniciar Sesion</label>
 					<!-- </form> -->
 					<!-- <form action="registrar.php">
 						<input type="email" name="email" placeholder="Correo Electronico">
@@ -251,4 +275,19 @@ session_start();
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/ajaxs.js"></script>
 <script src="js/main.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>  
+<script>
+	
+var myLatlng = new google.maps.LatLng(-34.397, 150.644);
+var mapOptions = {
+  zoom: 8,
+  center: myLatlng,
+  mapTypeId: google.maps.MapTypeId.SATELLITE
+};
+var map = new google.maps.Map(document.getElementById("map"),
+    mapOptions);
+
+
+
+</script>
 </html>
