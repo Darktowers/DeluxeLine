@@ -13,6 +13,118 @@ negro = #2e2f33
 blanco= #fff
 blanco-tenue= #EDEFED
 naranja = #FF3D00
+alerta = #319BC3;
+good = #31C36C;
+error = #FBCA5B;
+
+.Tempo
+	.fechas
+		.fechaini
+			margin: 0;
+			display: inline-block;
+			padding: 1em;
+			background-color: #31C36C;
+			color: white;
+			margin-right: 1em;
+			font-size: 1.2em;
+			p
+				margin 0
+		.fechafin
+			margin: 0;
+			padding: 1em;
+			background-color: #FBCA5B;
+			color: white;
+			margin-right: 1em;
+			display: inline-block;
+			font-size: 1.2em;
+			p
+				margin 0
+			
+.Messagebar
+	max-width: 648px;
+	margin: 0 auto;
+	text-align: center;
+	.Mess
+		display: inline-block;
+		padding: 1em;
+		border-radius: 5px;
+		color: white;
+		margin-bottom: 1em;
+		border: 2px dotted white;
+		
+	.Messageerror
+		background-color error
+	.Messagealert
+		background-color alerta
+	.Messagegood
+		background-color good
+		
+	.but
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		width: 200px;
+		padding: 1em;
+		margin-bottom: 1em;
+		transition all 1s ease-in-out
+	.Checkin
+		background-color error
+		&:hover
+			background-color #F7E251
+			
+	.Buscar1
+		background-color alerta 
+		&:hover
+			background-color #3BB7E6	
+		
+			
+.Menumovil
+	display none	
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #0086d4;
+	z-index: 4;
+	top: 0;
+	.cerrar
+		position: absolute;
+		right: 0;
+		margin-right: 0.5em;
+		margin-top: 0.5em;
+		span
+			color white
+			font-size 1.5em
+	.Menumovil-ul
+		text-align: center
+		position relative
+		top 30%
+		.Menumovil-item
+			list-style: none;
+			display: inline-block;
+			width: 100%;
+			.Menumovil-link		
+				width: 100%;
+				padding: 1em;
+				box-sizing: border-box;
+				position: relative;
+				display: block;
+				color: white;
+				text-decoration: none;
+				font-size: .9em;
+				text-transform: uppercase;
+		.lol
+			width: 100%;
+			padding: 1em;
+			box-sizing: border-box;
+			position: relative;
+			display: block;
+			color: white;
+			text-decoration: none;
+			font-size: .9em;
+			text-transform: uppercase;
+			
+		.Iactive
+			border-bottom: 2px solid white;
 .MenuEscritorio
 	display none
 .Cabecera
@@ -30,8 +142,6 @@ naranja = #FF3D00
 		&Img
 			width 130px
 			
-	.Menumovil
-		display none
 	.Menumovil-icono
 		display inline-block
 		float right

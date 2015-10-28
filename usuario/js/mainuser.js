@@ -56,3 +56,23 @@ $(".c4").hide();
   	
   	
   }); 
+
+    /*Menu Movil*/
+$('.Menumovil-icono').on("click",function(){
+  $(".Menumovil").show("fadeIn");
+});
+
+$('.cerrar').on("click",function(){
+  $('.buscar').hide("fadeOut"); 
+  $('.reservas').hide("fadeOut"); 
+  $('.pre').show("fadeOut");
+  $('.Registrarse').hide("fadeOut"); 
+  $('.IniciarForm').css("display","none");
+   $('.RegistrarseForm').css("display","none"); 
+  $('.reg').show("fadeOut");
+  $('.ini').show("fadeOut");
+  $(".Registra").hide("fadeOut");
+  $(".Iniciar").hide("fadeOut");
+ $(".Menumovil").hide("fadeOut");
+
+});

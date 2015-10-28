@@ -30,10 +30,12 @@ session_start();
 			</nav>
 		</div>
 		<div class="Menumovil">
+		<div class="cerrar"><span class="icon-cross"></span></div>
 			<nav class="Menumovil-ul">
 				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Buscar Habitacion</a></li>
-				<li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">'.$_SESSION['usuario'].'</a></li>
+				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link ">Principal</a></li>
+				<li class="Menumovil-item "><a href="" class="Menumovil-link">Buscar Habitacion</a></li>
+				<li class="Menumovil-item "><a href="" class="Menumovil-link">'.$_SESSION['usuario'].'</a></li>
 			</nav>
 		</div>
 		<div class="Menumovil-icono">
@@ -74,8 +76,25 @@ session_start();
 			<span class="Menumovil-grid"></span>
 			<span class="Menumovil-grid"></span>
 		</div>
-	</header> -->
+	</header> 
 
+
+
+Sus botones de checkin jajaja
+
+
+-->
+<div class="Messagebar">
+	<div class="Messageerror Mess"><p>Por favor realize una reservacion para acceder a nuestros servicios</p></div>
+	<a href="" class="Buscar1 but">Buscar Habitacion</a>
+	<div class="Messagealert Mess"><p>Para acceder a nuestros servicios porfavor de click al checkin</p></div>
+	<a href="" class="Checkin but">Checkin</a>
+	<div class="Messagegood Mess"><p>Excelente ahora usted puede solicitar servicios con nuestra plataforma</p></div>
+	
+	
+
+	
+</div>
 
 	<div class="Menu-s">
 		<div class="tab t1 tabactive"><span class="icon-ticket"></span><p class="Escritorio">Servicios</p></div>
@@ -168,11 +187,30 @@ session_start();
 		</div>
 		<div class="Cont c2">
 			
-			<h3>Productos</h3>
+			<h3>Compras recientes</h3>
 		</div>
 		<div class="Cont c3">
 			
-			<h3>Tiempo</h3>
+			<h3>Tiempo restante</h3>
+
+			<div class="Tempo">
+				<div class="fechas">
+					<div class="fechaini">
+						<p>Inicio</p>
+						<p>30/10/15</p>
+					</div>
+					<div class="fechafin">
+						<p>Fin</p>
+						<p>01/11/15</p>
+					</div>
+				</div>
+				<p class="noches" style="font-size: 20em;margin: 0;">
+					2
+				</p>
+				<p style="font-size: 3em;margin: 0;">
+					Noches
+				</p>
+			</div>
 		</div>
 		<div class="Cont c4">
 			

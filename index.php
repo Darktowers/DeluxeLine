@@ -53,6 +53,7 @@ height:  400px;
 		</div>
 		</header>
 <div class="Menumovil">
+<div class="cerrar"><span class="icon-cross"></span></div>
 			<nav class="Menumovil-ul">
 				<!-- <li class="MenuEscritorio-item"><a href="" class="MenuEscritorio-link">Ofertas</a></li> -->
 				<li class="Menumovil-item Iactive"><a href="" class="Menumovil-link">Buscar Habitacion</a></li>
