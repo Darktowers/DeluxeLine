@@ -185,21 +185,45 @@ height:  400px;
 		</div>
 
 	</div>
-	<section class="Serviciosm">
-				<h2>Disfruta Nuestros Servicios</h2>
-				<article class="serv">1</article>
-				<article class="serv">2</article>
-				<article class="serv">3</article>
-				<article class="serv">4</article>
-				<article class="serv">5</article>
+	<section class="Serviciosx">
+		<h2>Disfruta Nuestros Servicios</h2>
+			<div class="Serviciosm">
+				
+				<article class="serv">
+					<div class="Cilueta"></div>
+					<p>Piscina</p>
+					<img src="img/piscina1.jpg" alt="Piscina">
+				</article>
+				<article class="serv">
+					<div class="Cilueta"></div>
+					<p>Sauna</p>
+					<img src="img/sauna1.jpg" alt="Piscina">
+				</article>
+				<article class="serv">
+					<div class="Cilueta"></div>
+					<p>Buceo</p>
+					<img src="img/buceo.jpg" alt="Piscina">
+				</article>
+				<article class="serv">
+					<div class="Cilueta"></div>
+					<p>Playa</p>
+					<img src="img/deluxeline-playa.jpg" alt="Piscina">
+				</article>
+				<article class="serv">
+					<div class="Cilueta"></div>
+					<p>Paseos</p>
+					<img src="img/paseobote.jpg" alt="Piscina">
+				</article>
+			</div>
+		</section>
 		<div class="img-hotel" data-parallax="scroll" data-bleed="10"  data-z-index="3" data-image-src="./img/deluxeline-pool2.jpg">   
-        </div>	</section>
-	<section class="historia">
-		<article>
-				<h2>Tenemos mas de 25 años de historia</h2>
-		</article>
+       <h2 class="historia-f">25 años de clientes felices</h2>
+        </div>	
+	
+	
+				
+		
 
-	</section>
 
   <section class="Ubicacion">
 		    <div class="Contactanos">
