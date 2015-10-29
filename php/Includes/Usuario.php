@@ -5,8 +5,8 @@ session_start();
 		$pass2= md5($pass);
 
 		include'conexion.php';
-
-		$msg = validate($nombre,$documento,$pass2,$email);
+		$msg = "true"
+		/*$msg = validate($nombre,$documento,$pass2,$email);*/
 		
 			if ($msg=="true") {
 				$consulta="insert into usuario values('','".$nombre."','".$documento."','".$pass2."','1','".$email."');";
