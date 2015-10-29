@@ -9,7 +9,8 @@ session_start();
 		$msg = validate($nombre,$documento,$pass2,$email);
 		
 			if ($msg=="true") {
-				$consulta="insert into usuario values('','".$nombre."','".$documento."','".$pass2."','1','".$email."');";
+				$consulta="insert into usuario values(NULL,'".$nombre."','".$documento."','".$pass2."','1','".$email."');";
+				
 				$Resl=$mysql->query($consulta);
 				if($Resl){
 					return "true";
