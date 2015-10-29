@@ -46,7 +46,7 @@
 					<img src="img/pavo.jpg" alt="Piscina">
 					<p>Pavo a la naranja</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$35,000</p>
+					<span>$35,000</span>
 					</button>
 				</div>
 				<div class="Servicio">
@@ -54,7 +54,7 @@
 					<img src="img/cazuela.jpg" alt="Piscina">
 					<p>Cazuela de mariscos</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$30,000</p>	
+					<span>$30,000</span>	
 					</button>
 				</div>
 				<div class="Servicio">
@@ -62,7 +62,7 @@
 					<img src="img/robalo.jpg" alt="Piscina">
 					<p>Robalo en salsa</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$35,000</p>
+					<span>$35,000</span>
 					</button>
 				</div>
 				<div class="Servicio">
@@ -70,7 +70,7 @@
 					<img src="img/salmon.jpg" alt="Piscina">
 					<p>Salmon</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$45,000</p>
+					<span>$45,000</span>
 					</button>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 					<img src="img/colada.jpg" alt="Piscina">
 					<p>Piña Colada</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$15,000</p>
+					<span>$15,000</span>
 					</button>
 				</div>
 				<div class="Servicio">
@@ -89,7 +89,7 @@
 					<img src="img/coca.jpg" alt="Piscina">
 					<p>Coca cola</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$5,000</p>
+					<span>$5,000</span>
 					</button>
 				</div>
 				<div class="Servicio">
@@ -97,7 +97,7 @@
 					<img src="img/casillero.jpg" alt="Piscina">
 					<p>Casillero</p>
 					<button class="Pedir">Pedir Unidad
-						<p>$42,000</p>
+						<span>$42,000</span>
 					</button>
 				</div>
 				<div class="Servicio">
@@ -105,7 +105,7 @@
 					<img src="img/jugonatural.jpg" alt="Piscina">
 					<p>Jugo natural</p>
 					<button class="Pedir">Pedir Unidad
-					<p>$12,000</p>	
+					<span>$12,000</span>	
 					</button>
 				</div>
 			</div>
@@ -116,7 +116,7 @@
 					<img src="img/buceo.jpg" alt="Piscina">
 					<p>Buceo</p>
 					<button class="Pedir">Pedir Hora
-					<p>$242,000</p>	
+					<span>$242,000</span>	
 					</button>
 				</div>
 				<div class="Servicio">
@@ -124,7 +124,7 @@
 					<img src="img/paseobote.jpg" alt="Piscina">
 					<p>Paseo en bote</p>
 					<button class="Pedir">Pedir Hora
-					<p>$142,000</p>	
+					<span>$142,000</span>	
 					</button>
 				</div>
 				<div class="Servicio">
@@ -132,7 +132,7 @@
 					<img src="img/piscina1.jpg" alt="Piscina">
 					<p>Piscina</p>
 					<button class="Pedir">Pedir Hora
-					<p>$352,000</p>		
+					<span>$352,000</span>		
 					</button>
 				</div>
 				<div class="Servicio">
@@ -140,7 +140,7 @@
 					<img src="img/sauna1.jpg" alt="Piscina">
 					<p>Sauna</p>
 					<button class="Pedir">Pedir Hora
-					<p>$82,000</p>		
+						<span>$85,000</spanpan>	
 					</button>
 				</div>
 			</div>
