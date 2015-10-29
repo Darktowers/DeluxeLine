@@ -1,29 +1,29 @@
 $(function() {
 		
 var MinDate;		
-	$('.date').datepicker({ minDate: 0, onClose: function( selectedDate ) {
-        $( ".dateFin" ).datepicker( "option", "minDate", selectedDate );
+	$('.date').datepicker({ dateFormat:"yy-mm-dd", minDate: 0, onClose: function( selectedDate ) {
+        $( ".dateFin" ).datepicker( "option", "minDate", selectedDate );       
     	} 
     });
-    //$('.date').datepicker("option", "dateFormat", "mm/dd/y");
-	$('.dateFin').datepicker(
-		// { onClose: function( selectedDate ) {
-  //       $( ".date" ).datepicker( "option", "maxDate", "+1m" );
-  //     }
-  //   }
+
+	$('.dateFin').datepicker( 
+		 { dateFormat:"yy-mm-dd", minDate: 0, onClose: function( selectedDate ) {
+   		$( ".date" ).datepicker( "option", "maxDate", selectedDate );
+         }
+     }
     );
 	
 
-	$('.lol').datepicker({ minDate: 0, onClose: function( selectedDate ) {
+	$('.lol').datepicker({ dateFormat:"yy-mm-dd", minDate: 0, onClose: function( selectedDate ) {
         $( ".lolFin" ).datepicker( "option", "minDate", selectedDate );
     	} 
     });
-	//$('.dateFin').datepicker("option", "dateFormat", "mm/dd/y");
-	$('.lolFin').datepicker(
-	// { onClose: function( selectedDate ) {
- //        $( ".lol" ).datepicker( "option", "maxDate", "+1m" );
- //      }
- //    }
+	
+	$('.lolFin').datepicker( 
+	 	{ dateFormat:"yy-mm-dd", minDate: 0, onClose: function( selectedDate ) {
+         $( ".lol" ).datepicker( "option", "maxDate", selectedDate );
+	    }
+     }
     );
 	
 	
