@@ -115,52 +115,68 @@ Sus botones de checkin jajaja
 					<div class="Cilueta"></div>
 					<img src="img/pavo.jpg" alt="Piscina">
 					<p>Pavo a la naranja</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Unidad
+					<p>$35,000</p>
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/cazuela.jpg" alt="Piscina">
 					<p>Cazuela de mariscos</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Unidad
+					<p>$30,000</p>	
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/robalo.jpg" alt="Piscina">
 					<p>Robalo en salsa</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Unidad
+					<p>$35,000</p>
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/salmon.jpg" alt="Piscina">
 					<p>Salmon</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Unidad
+					<p>$45,000</p>
+					</button>
 				</div>
 			</div>
 			<div class="Bebida">
 				<h3>Bebidas</h3>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
-					<img src="img/piscina1.jpg" alt="Piscina">
-					<p>Piscina</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<img src="img/colada.jpg" alt="Piscina">
+					<p>Piña Colada</p>
+					<button class="Pedir">Pedir Unidad
+					<p>$15,000</p>
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
-					<img src="img/piscina1.jpg" alt="Piscina">
-					<p>Piscina</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<img src="img/coca.jpg" alt="Piscina">
+					<p>Coca cola</p>
+					<button class="Pedir">Pedir Unidad
+					<p>$5,000</p>
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
-					<img src="img/piscina1.jpg" alt="Piscina">
-					<p>Piscina</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<img src="img/casillero.jpg" alt="Piscina">
+					<p>Casillero</p>
+					<button class="Pedir">Pedir Unidad
+						<p>$42,000</p>
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
-					<img src="img/sauna1.jpg" alt="Piscina">
-					<p>Sauna</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<img src="img/jugonatural.jpg" alt="Piscina">
+					<p>Jugo natural</p>
+					<button class="Pedir">Pedir Unidad
+					<p>$12,000</p>	
+					</button>
 				</div>
 			</div>
 			<div class="Plus">
@@ -169,23 +185,32 @@ Sus botones de checkin jajaja
 					<div class="Cilueta"></div>
 					<img src="img/buceo.jpg" alt="Piscina">
 					<p>Buceo</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Hora
+					<p>$242,000</p>	
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/paseobote.jpg" alt="Piscina">
 					<p>Paseo en bote</p>
-					<button class="Pedir">Pedir Unidad</button>
+					<button class="Pedir">Pedir Hora
+					<p>$142,000</p>	
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/piscina1.jpg" alt="Piscina">
 					<p>Piscina</p>
+					<button class="Pedir">Pedir Hora
+					<p>$352,000</p>		
+					</button>
 				</div>
 				<div class="Servicio">
 					<div class="Cilueta"></div>
 					<img src="img/sauna1.jpg" alt="Piscina">
 					<p>Sauna</p>
+					<button class="Pedir">Pedir Hora
+					</button>
 				</div>
 			</div>
 		</div>
@@ -219,7 +244,7 @@ Sus botones de checkin jajaja
 		<div class="Cont c4">
 			
 			<h3>Checkout</h3>	
-
+		<a  id="checkin" class="Checkin but">Checkout</a>
 		</div>
 
 	</div>
