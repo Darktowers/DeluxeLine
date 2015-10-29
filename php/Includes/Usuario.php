@@ -87,6 +87,7 @@ session_start();
 					
 						$_SESSION['activo']=true;
 						$_SESSION['usuario']=$resl['nombre'];
+						$_SESSION['idUsuario']=$resl['idUsuario'];
 						$_SESSION['rol']=$resl['fkIdRolUsuario'];
 						return "true";
 					}elseif($row < 1){

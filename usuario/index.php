@@ -51,6 +51,9 @@ session_start();
 	elseif(@$_SESSION['activo']!=true){
 		header('location:../index.php');
 	}
+
+
+
 	?>
 	<!-- <header class="Cabecera">
 		<div class="Cabecera-logo ">
@@ -85,24 +88,25 @@ Sus botones de checkin jajaja
 
 -->
 <div class="Messagebar">
-	<div class="Messageerror Mess"><p>Por favor realize una reservacion para acceder a nuestros servicios</p></div>
-	<a href="" class="Buscar1 but">Buscar Habitacion</a>
-	<div class="Messagealert Mess"><p>Para acceder a nuestros servicios porfavor de click al checkin</p></div>
-	<a href="" class="Checkin but">Checkin</a>
-	<div class="Messagegood Mess"><p>Excelente ahora usted puede solicitar servicios con nuestra plataforma</p></div>
+	<?php
+		include "../php/Includes/selectUsuarioEst.php";	
+	?>
 	
+	<!-- 
+	<div class="Messagegood Mess"><p>Excelente ahora usted puede solicitar servicios con nuestra plataforma</p></div>
+	 -->
 	
 
 	
 </div>
 
-	<div class="Menu-s">
+	<div style="display: none;" class="checkF Menu-s">
 		<div class="tab t1 tabactive"><span class="icon-ticket"></span><p class="Escritorio">Servicios</p></div>
 		<div class="tab t2"><span class="icon-cart"><p class="Escritorio">Productos</p></div>
 		<div class="tab t3"><span class="icon-calendar"><p class="Escritorio">Tiempo</p></div>
 		<div class="tab t4"><span class="icon-switch"><p class="Escritorio">Checkout</p></div>
 	</div>
-	<div class="Contenido">
+	<div style="display: none;" class="checkF Contenido">
 		<div class="Cont c1">
 			<h2>Servicios</h2>
 			<div class="Comida">
@@ -224,5 +228,6 @@ Sus botones de checkin jajaja
 <script src="../js/lib/jquery-ui/jquery-ui.js"></script>
 <script src="../js/calendario.js"></script>
 <script src="../js/owl.carousel.min.js"></script>
+<script src="../js/checkin.js"></script>
 <script src="js/mainuser.js"></script>
 </html>

@@ -11,9 +11,9 @@ elseif(@$_SESSION['activo']==true){
 		include 'conexion.php';
 		include 'generarReservacion.php';
 
-		$usuario=$_SESSION['usuario'];
+		$usuario=$_SESSION['idUsuario'];
 
-		$consulta="select * from usuario where nombre='".$usuario."'";
+		$consulta="select * from usuario where idUsuario='".$usuario."'";
 
 		$resl=$mysql->query($consulta);
 		if(!$resl){

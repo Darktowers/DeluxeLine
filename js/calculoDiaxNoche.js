@@ -2,6 +2,12 @@ $(function(){
 	var llegada=new Date($('#fechaPreReservaLlegada').val());
 	var salida=new Date($('#fechaPreReservaSalida').val());
 	var diferencia = salida.getDate() - llegada.getDate();
+	
+	if(diferencia<0){
+
+		 	diferencia=diferencia+31;
+		 	
+		 }
 	var precio=$('#precioHabitacion').attr("value");
 	var calculo=parseInt(diferencia)*parseInt(precio);
 	

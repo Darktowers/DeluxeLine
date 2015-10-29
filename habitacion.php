@@ -229,7 +229,7 @@ if($_POST){
 						<input type="number" name="cedula" id="cedula" placeholder="Cedula">
 						<input type="email" name="email" id="email" placeholder="Correo Electronico">
 						<input type="password" name="pass" id="pass" placeholder="Contraseña">
-						<label class="BuscarHabitacion-botonBuscar" id="registrar"  style="width: 100%;
+						<label class="BuscarHabitacion-botonBuscar" id="registrarYReservar"  style="width: 100%;
     padding: 1em;border:0;color:white;">Registrarse</label>
     					<p style="color:white;">Al registrarme, acepto las Condiciones del servicio, la Política de Privacidad y de Cookies</p>
 					<!-- </form> -->
@@ -243,7 +243,7 @@ if($_POST){
 					<!-- <form action="registrar.php"> -->
 						<input type="email" name="email" id="emailInicio" placeholder="Correo Electronico">
 						<input type="password" name="pass" id="passInicio" placeholder="Contraseña">
-						<label class="BuscarHabitacion-botonBuscar" id="inicio" style="width: 100%;
+						<label class="BuscarHabitacion-botonBuscar" id="inicioYReservar" style="width: 100%;
     padding: 1em;border:0; color:white;" id="inicioSesion">Iniciar Sesion</label>
 					<!-- </form> -->
 				</div>
