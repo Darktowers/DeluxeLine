@@ -5,7 +5,7 @@ var MinDate;
         $( ".dateFin" ).datepicker( "option", "minDate", selectedDate );
     	} 
     });
-
+    //$('.date').datepicker("option", "dateFormat", "mm/dd/y");
 	$('.dateFin').datepicker(
 		// { onClose: function( selectedDate ) {
   //       $( ".date" ).datepicker( "option", "maxDate", "+1m" );
@@ -18,7 +18,7 @@ var MinDate;
         $( ".lolFin" ).datepicker( "option", "minDate", selectedDate );
     	} 
     });
-
+	//$('.dateFin').datepicker("option", "dateFormat", "mm/dd/y");
 	$('.lolFin').datepicker(
 	// { onClose: function( selectedDate ) {
  //        $( ".lol" ).datepicker( "option", "maxDate", "+1m" );

@@ -2,23 +2,31 @@ $(function() {
 		
 $("#reservar").click(function(){
 	var fechaLleagada=$("#fechaLlegada").attr("value");
-	var fehcaSalida=$("#fechaSalida").attr("value");
+	var fechaSalida=$("#fechaSalida").attr("value");
 	var tipoHabitacion=$("#tipoHabitacion").attr("value");
+	var precioHabitacion=$("#precioHabitacion").attr("value");
 	
 	$.ajax({
 		type:"POST",
 		url:"php/Includes/validacionSesion.php",
-		data:{ fechaLleagada: fechaLleagada, fehcaSalida:fehcaSalida, tipoHabitacion : tipoHabitacion} ,
+		data:{ fechaLleagada: fechaLleagada, fechaSalida : fechaSalida, tipoHabitacion : tipoHabitacion, precioHabitacion : precioHabitacion} ,
 		success:function(data){
-			if(data!="true"){
+			if(data=="false"){
 				// alert("todo al pelo no ha iniciado sesion");
 			}
 			else{
 				if(data=="true"){
-					alert("Su Reserva fue asignada");
+					alert("Tu reserva ha sido realizada");
 					document.location=("usuario/index.php");
 				}
+				else{
+					if(data!="true"||data!="false"){
+						alert(data);
+						document.location=("index.php");
+					}
+				}
 			}
+
 							
 		}
 	});
@@ -35,7 +43,21 @@ $("#registrar").click(function(){
 		url:"php/Includes/registrar.php",
 		data:{ nombre: nombre, cedula:cedula, pass: password, email: email} ,
 		success:function(data){
-			if(data=="true"){document.location=("usuario/index.php");}
+
+			if(data=="true"){
+				$.ajax({
+					type:"POST",
+					url:"php/Includes/inicio.php",
+					data:{pass: password, email: email} ,
+					success:function(data){
+						if(data=="true"){document.location=("usuario/index.php");}
+						else{
+						$("#errori").show("fade");	
+						$("#errori").html(data);	
+						}		
+					}
+				});
+			}
 			else{
 				$("#errorr").show("fade");	
 				$("#errorr").html(data);		

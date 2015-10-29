@@ -12,11 +12,17 @@ class consulHabi
 
 
 		while ($resl = $resultado->fetch_assoc()) {
+			$conNumeroHabitacionDisponible="SELECT * FROM habitacion WHERE fkIdTipoHabitacion='".$resl['idTipoHabitacion']."'and fkIdTipoEstado=1";
+			$conNH=$mysql->query($conNumeroHabitacionDisponible);
+			$cant=$conNH->num_rows;
+			if($cant>0){
+
 			echo '<article class="Habitacion" value="'.$resl['nombreHabitacion'].'" id="'.$resl['idTipoHabitacion'].'" alt="'.$resl['precio'].'">
 					<img src="img/habitaciones/'.$resl['nombreHabitacion'].'.jpg" alt="'.$resl['nombreHabitacion'].'"  class="Habitacion-img">
 						<div class="tipoHabitacion"><h3>'.$resl['nombreHabitacion'].'</h3></div>
 						<div class="precio">$'.$resl['precio'].'</div>
 				</article>';
+			}
 		}
 
 	}
